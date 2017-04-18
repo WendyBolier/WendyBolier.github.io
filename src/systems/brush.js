@@ -2,7 +2,7 @@
 var VERSION = 1;
 
 AFRAME.BRUSHES = {};
-//test test 
+//test test
 AFRAME.registerBrush = function (name, definition, options) {
   var proto = {};
 
