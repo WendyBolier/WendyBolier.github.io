@@ -8,15 +8,18 @@ AFRAME.registerComponent('ptp-drawings', {
     },
 
     init: function() {
-        var sceneEl = document.querySelector('a-scene');
+       // var sceneEl = document.querySelector('a-scene');
+        var sceneEl = el.sceneEl;
+        var sphere = sceneEl.querySelector('a-sphere');
 
-
-        AFRAME.registerComponent('do-something-once-loaded', {
+       AFRAME.registerComponent('do-something-once-loaded', {
             init: function () {
                 // This will be called after the entity has properly attached and loaded.
-                console.log('I am ready'!);
+                console.log('I am ready');
             }
         });
+
+      sphere.setAttribute('color', 'yellow');
 
         var entityEl = document.createElement('a-entity');
         entityEl.setAttribute('do-something-once-loaded', '');
@@ -28,9 +31,10 @@ AFRAME.registerComponent('ptp-drawings', {
             width: 1
         });
 
-        entityEl.setAttribute('position', {x: 1, y: 2, z: -3});
-        entityEl.setAttribute('material', 'color', 'red');
-    }
+        entityEl.setAttribute('position', '1 2 -3');
+        entityEl.setAttribute('color', 'blue');
+    },
+
 
     update: function () {
 

@@ -13,6 +13,7 @@
     <script src="https://ucarecdn.com/widget/2.5.5/uploadcare/uploadcare.full.min.js"></script>
     <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.12/dist/clipboard.min.js"></script>
     <script src="build.js"></script>
+    <script src="src/components/paint-controls.js" ></script>
     <script src="vendor/aframe-teleport-component.min.js"></script>
     <script src="src/components/ptp-drawings.js"></script>
     <link rel="stylesheet" href="css/main.css">
@@ -25,6 +26,7 @@
         <img id="skymap" src="assets/images/sky.jpg" crossOrigin="anonymous">
         <img id="uinormal" src="assets/images/ui-normal.png" crossOrigin="anonymous">
         <img id="floor" src="assets/images/floor.jpg" crossOrigin="anonymous">
+        <img id="fish" src="assets/images/Fish.png" >
         <a-asset-item id="logoobj" src="assets/models/logo.obj"></a-asset-item>
         <a-asset-item id="logomtl" src="assets/models/logo.mtl"></a-asset-item>
         <a-asset-item id="uiobj" src="assets/models/ui.obj"></a-asset-item>
@@ -45,8 +47,7 @@
               </a-entity>
       <a-entity id="left-hand"
                 brush
-                <!--if-no-vr-headset="visible: false"-->
-                if-no-vr-headset="visible: true"
+                if-no-vr-headset="visible: false"
                 paint-controls="hand: left"
                 teleport="ground: #ground; hitCylinderColor: #ff3468; curveHitColor: #ff3468; curveMissColor: #333333; curveLineWidth: 0.01; hitEntity: #hitEntityLeft"
       ui></a-entity>
@@ -61,11 +62,7 @@
 
       <!-- Test -->
 
-      <a-camera>
-        <a-cursor></a-cursor>
-      </a-camera>
-
-
+<!--<a-entity ptp-drawings ></a-entity> WERKT NIET -->
 
 
       <a-sphere color="red" position="0 2 -5" radius="0.05" visible="true">
@@ -73,11 +70,13 @@
       </a-sphere>
 
 
-      <a-text value="Hallo!" color="#BBB" position="0 0.2 -1" scale="1.5 1.5 1.5"></a-text>
+      <a-sphere color="blue" position="0 2 0" radius="0.05"></a-sphere>
 
 
 
 
+<a-image src="#fish" position="1 1 0" ></a-image>
+      <a-obj-model src="assets/models/Fish.obj" mtl="assets/models/Fish.mtl" scale="0.05 0.05 0.05" position="0 1 0"></a-obj-model>
 
 
 
