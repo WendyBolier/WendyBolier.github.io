@@ -156,7 +156,9 @@ AFRAME.registerComponent('ui', {
       }
       case name === 'clear': {
         if (!this.pressedObjects[name]) {
-          this.el.sceneEl.systems.brush.clear();
+            if (window.confirm("Weet je zeker dat je alles wilt verwijderen?") == true) {
+                this.el.sceneEl.systems.brush.clear();
+            }
         }
         break;
       }
