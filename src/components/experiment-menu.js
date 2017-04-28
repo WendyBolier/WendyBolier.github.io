@@ -711,7 +711,7 @@ AFRAME.registerComponent('experiment-menu', {
         // Remove listeners of previous hand
         if (this.handEl) { this.removeHandListeners(); }
         this.handEl = handEl;
-        this.handRayEl = this.handEl.components.ui.rayEl;
+        this.handRayEl = this.handEl.components.experiment-menu.rayEl;
         this.menuEls = this.uiEl.object3D.children;
         this.syncUI();
         this.addHandListeners();

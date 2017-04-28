@@ -1,12 +1,16 @@
+/**
+ * Created by Wendy on 22-4-2017.
+ */
+
 /* globals AFRAME */
-AFRAME.registerSystem('ui', {
+AFRAME.registerSystem('experiment-menu', {
     init: function () {
         this.initTextures();
     },
 
     initTextures: function () {
         var self = this;
-        var hoverTextureUrl = 'assets/images/ui-hover.png';
+        var hoverTextureUrl = 'assets/images/spongebob2D.png';//ui-hover.png';
         var pressedTextureUrl = 'assets/images/ui-pressed.png';
         this.sceneEl.systems.material.loadTexture(hoverTextureUrl, {src: hoverTextureUrl}, onLoadedHoverTexture);
         this.sceneEl.systems.material.loadTexture(pressedTextureUrl, {src: pressedTextureUrl}, onLoadedPressedTexture);
