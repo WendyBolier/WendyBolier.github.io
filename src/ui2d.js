@@ -6,8 +6,6 @@ window.addEventListener('load', function (event) {
   var progressDiv = document.querySelector('#apainter-ui .progress');
   var progressBar = document.querySelector('#apainter-ui .bar');
 
-  var menuButton = document.querySelector(#apainter-experiment-menu .button);
-
   document.addEventListener('drawing-upload-completed', function (event) {
     shareDiv.classList.remove('hide');
     progressDiv.classList.add('hide');
@@ -27,9 +25,5 @@ window.addEventListener('load', function (event) {
   var clipboard = new Clipboard('.button.copy');
   clipboard.on('error', function (e) {
     console.error('Error copying to clipboard:', e.action, e.trigger);
-  });
-
-  document.addEventListener('open-experiment-menu', function (event) {
-    // open experiment menu
   });
 });

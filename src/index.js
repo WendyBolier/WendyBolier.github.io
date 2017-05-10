@@ -7,6 +7,7 @@ require('../vendor/OrbitControls.js');
 
 require('./utils.js');
 require('./ui2d.js');
+require('./experiment-menu-2d');
 
 require('./systems/brush.js');
 require('./systems/ui.js');

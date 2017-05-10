@@ -1,0 +1,13 @@
+# Blender MTL File: 'cartoonCottageHouse.blend'
+# Material Count: 1
+
+newmtl cottage
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.777791 0.800000 0.332488
+Ks 0.010000 0.010000 0.010000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\Spacelab\Downloads\wendybolier 2017-05-09 at 6.40.06 PM\Cartoon Cottage House\cartoon_Cottage_House\textures\cottageDiffused.png

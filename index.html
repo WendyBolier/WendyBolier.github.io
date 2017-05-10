@@ -22,6 +22,7 @@
     <script src="src/components/experiment-menu.js" ></script>
     <script src="vendor/aframe-teleport-component.min.js"></script>
     <script src="src/components/ptp-drawings.js"></script>
+    <script src="src/experiment-menu-2d.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
@@ -69,6 +70,8 @@
         <a-asset-item id="fish2-3D" src="assets/models/TropicalFish08.obj"></a-asset-item>
         <a-asset-item id="fish2-mtl" src="assets/models/TropicalFish08.mtl"></a-asset-item>
 
+        <a-asset-item id="pyramid-3D" src="assets/models/pyramid.obj"></a-asset-item>
+
       </a-assets>
       <a-light type="point" light="color: #fff; intensity:0.6" position="3 10 1"></a-light>
       <a-light type="point" light="color: #fff; intensity:0.2" position="-3 -10 0"></a-light>
@@ -104,35 +107,47 @@
 
 <!-- <a-entity ptp-drawings ></a-entity> WERKT! -->
 
-
+      <!-- MOVING TEST DOT -->
       <a-sphere color="red" position="0 2 -5" radius="0.05" visible="false">
         <a-animation attribute="position" to="0 2.2 -5" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
       </a-sphere>
 
-
+      <!-- BLUE TEST DOT -->
       <a-sphere color="blue" position="0 2 0" radius="0.05" visible="false"></a-sphere>
 
       <!-- CUBE -->
-      <a-image src="#cube2D" position="1 1 -1" scale="0.7 0.7 0.7" visible="false"></a-image>
-      <a-box color="blue" position="-1 1 -1" scale="0.5 0.5 0.5" visible="false"></a-box>
+      <a-image id="cube2Did" class="figure" src="#cube2D" position="1 1 -1" scale="0.7 0.7 0.7" visible="false" ></a-image>
+      <a-box id="cube3Did" class="figure" color="blue" position="-1 1 -1" scale="0.5 0.5 0.5" visible="false"></a-box>
+
+      <!-- SPHERE -->
+      <a-sphere id="sphere3Did" class="figure" color="red" position="-1 1 -1" scale="0.5 0.5 0.5" visible="false"></a-sphere>
+
+      <!-- CYLINDER -->
+      <a-cylinder id="cylinder3Did" class="figure" color="yellow" position="-1 1 -1" height="1.5" radius="0.5" scale="0.5 0.5 0.5" visible="false"></a-cylinder>
+
+      <!-- CONE -->
+      <a-cone color="green" position="-1 1 -1" radius-bottom="1.5" radius-top="0" scale="0.5 0.5 0.5" visible="false"></a-cone>
+
+      <!-- PYRAMID -->
+      <a-obj-model id="pyramid3Did" class="figure" src="#pyramid-3D" scale="0.3 0.3 0.3" position="-1 1 -1" visible="false" color="green"></a-obj-model>
 
       <!-- HOUSE -->
-      <a-image src="#house2D" position="1 1 -1" scale="1.2 1.2 1.2" visible="false"></a-image>
-      <a-obj-model src="#house3D" mtl="#house-mtl" scale="0.0035 0.0035 0.0035" position="-1 0.6 -1" rotation="0 180 0" visible="false"></a-obj-model>
+      <a-image id="house2Did" src="#house2D" class="figure" position="1 1 -1" scale="1.2 1.2 1.2" visible="false"></a-image>
+      <a-obj-model id="house3Did" src="#house3D" class="figure" mtl="#house-mtl" scale="0.0035 0.0035 0.0035" position="-1 0.6 -1" rotation="0 180 0" visible="false"></a-obj-model>
 
       <!-- FISH 2 -->
-      <a-image src="#fish2-2D" position="1 1 -1" scale="1 1 1" visible="false"></a-image>
-      <a-obj-model src="#fish2-3D" mtl="#fish2-mtl" scale="0.003 0.003 0.003" position="-1 1 -1" rotation="0 0 0" visible="true"></a-obj-model>
+      <a-image id="fish2Did" src="#fish2-2D" class="figure" position="1 1 -1" scale="1 1 1" visible="false"></a-image>
+      <a-obj-model id="fish3Did" src="#fish2-3D" class="figure" mtl="#fish2-mtl" scale="0.003 0.003 0.003" position="-1 1 -1" rotation="0 0 0" visible="false"></a-obj-model>
 
       <!-- BUG -->
-      <a-image src="#bug2D" position="1 1.1 -1" scale="1.2 1.2 1.2" visible="false"></a-image>
-      <a-obj-model src="#bug3D" mtl="#bug-mtl" scale="0.15 0.15 0.15" position="-1 0.5 -1" rotation="180 30 180" visible="false"></a-obj-model>
+      <a-image id="bug2Did" src="#bug2D" class="figure" position="1 1.1 -1" scale="1.2 1.2 1.2" visible="false"></a-image>
+      <a-obj-model id="bug3Did" src="#bug3D" class="figure" mtl="#bug-mtl" scale="0.15 0.15 0.15" position="-1 0.5 -1" rotation="180 30 180" visible="false"></a-obj-model>
 
       <!-- KNUT -->
-      <a-image src="#knut2D" position="1 0.8 -1" scale="1 1 1" visible="false"></a-image>
-      <a-obj-model src="#knut3D" mtl="#knut-mtl" scale="0.005 0.005 0.005" position="-1 0.5 -1" rotation="0 50 0" visible="false"></a-obj-model>
+      <a-image id="knut2Did" src="#knut2D" class="figure" position="1 0.8 -1" scale="1 1 1" visible="false"></a-image>
+      <a-obj-model id="knut3Did" src="#knut3D" class="figure" mtl="#knut-mtl" scale="0.005 0.005 0.005" position="-1 0.5 -1" rotation="0 50 0" visible="false"></a-obj-model>
 
-
+      <a-obj-model id="smallchurch3Did" src="assets/models/Step-by-step/SmallChurch/smallchurch-full.obj" mtl="assets/models/Step-by-step/SmallChurch/smallchurch-full.mtl" position="-1 0.5 -1" scale="0.1 0.1 0.1" rotation="0 90 0"></a-obj-model>
 
       <!-- OLD
 
@@ -149,6 +164,7 @@
       <a-obj-model src="#spongebob3D" mtl="assets/models/spongebob.mtl" scale="0.015 0.015 0.015" position="-1 0.1 -1" rotation="0 -90 0" visible="false"></a-obj-model>
 
       -->
+
 
 
     </a-scene>
@@ -181,7 +197,47 @@
 
     <!-- EXPERIMENT MENU -->
     <div id="apainter-experiment-menu">
-      <div class="button">MENU</div>
+
+      <!-- 2D/3D switch -->
+      <label class="menu switch">
+        <input id="slider" type="checkbox">
+        <div class="menu slider round"></div>
+      </label>
+
+      <div class="menu-button" id="toggleMenuButton" onclick="toggleMenuVisibility()">MENU</div>
+      <br>
+      <br>
+
+      <div class="menu text">
+        <p>Basic shapes</p>
+      </div>
+
+      <input type="image" src="assets/images/buttons/cube.png" name="cube" class="menu figure-button" id="cube-button" onclick="openFigure(1)" />
+      <input type="image" src="assets/images/buttons/pyramid.png" name="pyramid" class="menu figure-button" id="pyramid-button" onclick="openFigure(2)"/>
+      <input type="image" src="assets/images/buttons/sphere.png" name="sphere" class="menu figure-button" id="sphere-button" onclick="openFigure(3)"/>
+      <input type="image" src="assets/images/buttons/cylinder.png" name="cylinder" class="menu figure-button" id="cylinder-button" onclick="openFigure(4)"/>
+      <br>
+      <div class="menu text">
+        <p>Step-by-step</p>
+      </div>
+
+      <div class="menu text">
+        <p>Point-to-point</p>
+      </div>
+
+      <div class="menu text">
+        <p>Figures</p>
+      </div>
+
+      <input type="image" src="assets/images/buttons/house.png" name="house" class="menu figure-button" id="house-button" onclick="openFigure(5)"/>
+      <input type="image" src="assets/images/buttons/fish.png" name="fish" class="menu figure-button" id="fish-button" onclick="openFigure(6)"/>
+      <input type="image" src="assets/images/buttons/firefly.png" name="firefly" class="menu figure-button" id="firefly-button" onclick="openFigure(7)"/>
+      <input type="image" src="assets/images/buttons/polarbear.png" name="polarbear" class="menu figure-button" id="polarbear-button" onclick="openFigure(8)"/>
+
+      <div class="menu wide-button">Graded assignment 1</div> <br>
+      <div class="menu wide-button">Graded assignment 2</div> <br>
+      <div onclick="openFigure()" class="menu wide-button">Free drawing</div>
+
     </div>
 
 

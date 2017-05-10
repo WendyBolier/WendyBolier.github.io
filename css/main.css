@@ -99,16 +99,125 @@
   line-height: 1.2em;
   background-color: rgba(10,10,10,0.8);
   border-radius: 6px;
-  padding: 1.7em 2em;
+  padding: 0.8em 1em;
 }
 
-#apainter-experiment-menu .button {
+#apainter-experiment-menu .menu-button {
+  position: relative;
   background-color: #ef2d5e;
   color: #fff;
   cursor: pointer;
   font-size: 12px;
-  width: 130px;
+  width: 80px;
   text-align: center;
-  max-width: 115px;
   padding: 6px;
+  float: right;
+  margin-left: 10px;
+}
+
+#apainter-experiment-menu .menu.figure-button {
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#apainter-experiment-menu .menu.wide-button {
+  position: relative;
+  background-color: #ef2d5e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  width: 90%;
+  text-align: center;
+  padding: 6px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+#apainter-experiment-menu .menu.text{
+  color: #ccc;
+  text-align: center;
+  font-size: 14px;
+  text-shadow: 0px 2px 1px #000;
+}
+
+/*------ 2D/3D switch CSS ---------*/
+.menu.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 33px;
+  float: left;
+}
+
+.menu.switch input {display:none;}
+
+.menu.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e42b5a;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.menu.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .menu.slider {
+  background-color: #e42b5a;
+}
+
+input:focus + .menu.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .menu.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.menu.slider:after
+{
+  content:'3D';
+  color: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 12px;
+  transform: translate(5px, -7px);
+
+}
+
+input:checked + .menu.slider:after
+{
+  content:'2D';
+  transform: translate(-22px, -7px);
+}
+
+/* Rounded sliders */
+.menu.slider.round {
+  border-radius: 34px;
+}
+
+.menu.slider.round:before {
+  border-radius: 50%;
 }
