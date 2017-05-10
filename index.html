@@ -113,7 +113,7 @@
       </a-sphere>
 
       <!-- BLUE TEST DOT -->
-      <a-sphere color="blue" position="0 2 0" radius="0.05" visible="false"></a-sphere>
+      <a-sphere color="blue" position="0 2 0" radius="0.05" class="apainter-ui" visible="true"></a-sphere>
 
       <!-- CUBE -->
       <a-image id="cube2Did" class="figure" src="#cube2D" position="1 1 -1" scale="0.7 0.7 0.7" visible="false" ></a-image>
@@ -147,8 +147,6 @@
       <a-image id="knut2Did" src="#knut2D" class="figure" position="1 0.8 -1" scale="1 1 1" visible="false"></a-image>
       <a-obj-model id="knut3Did" src="#knut3D" class="figure" mtl="#knut-mtl" scale="0.005 0.005 0.005" position="-1 0.5 -1" rotation="0 50 0" visible="false"></a-obj-model>
 
-      <a-obj-model id="smallchurch3Did" src="assets/models/Step-by-step/SmallChurch/smallchurch-full.obj" mtl="assets/models/Step-by-step/SmallChurch/smallchurch-full.mtl" position="-1 0.5 -1" scale="0.1 0.1 0.1" rotation="0 90 0"></a-obj-model>
-
       <!-- OLD
 
       FISH
@@ -165,7 +163,11 @@
 
       -->
 
+     <!-- <a-obj-model src="assets/models/Step-by-step/SmallChurch/smallchurch-0.obj" mtl="assets/models/Step-by-step/SmallChurch/smallchurch-0.mtl" position="-1 0.5 -1" scale="0.1 0.1 0.1" rotation="0 90 0" ></a-obj-model>
 
+      <a-obj-model src="assets/models/Step-by-step/Tree/tree-full.obj" mtl="assets/models/Step-by-step/Tree/tree-full.mtl" position="-1 0.5 -1" scale="0.3 0.3 0.3" rotation="0 0 0" ></a-obj-model>
+-->
+      <a-obj-model src="assets/models/cartoonCottageHouse.obj" mtl="assets/models/cartoonCottageHouse.mtl" position="-1 0.5 -1" scale="0.1 0.1 0.1" rotation="0 0 0" ></a-obj-model>
 
     </a-scene>
 
@@ -220,6 +222,9 @@
       <div class="menu text">
         <p>Step-by-step</p>
       </div>
+
+      <input type="image" src="assets/images/buttons/tree.png" name="tree" class="menu figure-button" id="tree-button" onclick="openFigure(9)" />
+      <input type="image" src="assets/images/buttons/smallchurch.png" name="smallchurch" class="menu figure-button" id="smallchurch-button" onclick="openFigure(10)" />
 
       <div class="menu text">
         <p>Point-to-point</p>

@@ -62,6 +62,7 @@ AFRAME.registerComponent('ui-raycaster', {
     var data = this.data;
     var i;
     var objectEls;
+    var nButton = this.el.querySelector("nextButtonID");
 
     // Push meshes onto list of objects to intersect.
     if (data.objects) {
@@ -70,6 +71,7 @@ AFRAME.registerComponent('ui-raycaster', {
       for (i = 0; i < objectEls.length; i++) {
         this.objects.push(objectEls[i].object3D);
       }
+      this.objects.push(nButton.object3D);
       return;
     }
 

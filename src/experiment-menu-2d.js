@@ -85,7 +85,12 @@ function openFigure(f) {
             break;
 
         case 9:
-            step-by-step
+            sbsTree();
+            break;
+
+        case 10:
+            sbsSmallChurch();
+            break;
 
         default:
             break;
@@ -98,3 +103,32 @@ function removeAllFiguresFromScene() {
         figures[i].setAttribute('visible', 'false');
     }
 }
+
+function sbsTree() {
+
+}
+
+function sbsSmallChurch() {
+    var sceneEl = document.querySelector('a-scene');
+    var churchEl = document.createElement('a-obj-model');
+    sceneEl.appendChild(churchEl);
+
+    churchEl.setAttribute('src', 'assets/models/Step-by-step/SmallChurch/smallchurch-0.obj');
+    churchEl.setAttribute('mtl', 'assets/models/Step-by-step/SmallChurch/smallchurch-0.mtl');
+    churchEl.setAttribute('position', '-1 0.5 -1');
+    churchEl.setAttribute('scale', '0.1 0.1 0.1');
+    churchEl.setAttribute('rotation', '0 90 0');
+    churchEl.setAttribute('material.side', 'THREE.DoubleSide');
+
+    var nextButton = document.createElement('a-image');
+    sceneEl.appendChild(nextButton);
+
+    nextButton.setAttribute('id', 'nextButtonID');
+    nextButton.setAttribute('src', 'assets/images/buttons/next.png');
+    nextButton.setAttribute('position', '0 0.5 -1.5');
+    nextButton.setAttribute('scale', '0.5 0.5 0.5');
+
+
+    // if button pressed next step
+}
+
