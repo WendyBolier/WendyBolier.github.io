@@ -127,8 +127,13 @@ function sbsSmallChurch() {
     nextButton.setAttribute('src', 'assets/images/buttons/next.png');
     nextButton.setAttribute('position', '0 0.5 -1.5');
     nextButton.setAttribute('scale', '0.5 0.5 0.5');
+    nextButton.setAttribute('class', 'apainter-ui');
+
+
+
 
 
     // if button pressed next step
 }
+
 

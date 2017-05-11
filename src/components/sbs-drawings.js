@@ -9,47 +9,32 @@ AFRAME.registerComponent('sbs-drawings', {
 
     init: function() {
         var sceneEl = document.querySelector('a-scene');
-        var sphere = sceneEl.querySelector('a-sphere');
 
-        AFRAME.registerComponent('do-something-once-loaded', {
-            init: function () {
-                // This will be called after the entity has properly attached and loaded.
-                console.log('I am ready');
-            }
-        });
+        var churchEl = document.createElement('a-obj-model');
+        sceneEl.appendChild(churchEl);
 
-        sphere.setAttribute('color', 'yellow');
+        churchEl.setAttribute('src', 'assets/models/Step-by-step/SmallChurch/smallchurch-0.obj');
+        churchEl.setAttribute('mtl', 'assets/models/Step-by-step/SmallChurch/smallchurch-0.mtl');
+        churchEl.setAttribute('position', '-1 0.5 -1');
+        churchEl.setAttribute('scale', '0.1 0.1 0.1');
+        churchEl.setAttribute('rotation', '0 90 0');
+        churchEl.setAttribute('material.side', 'THREE.DoubleSide');
+        churchEl.setAttribute('visible', 'false');
 
-        var entityEl = document.createElement('a-entity');
-        entityEl.setAttribute('do-something-once-loaded', '');
-        sceneEl.appendChild(entityEl);
 
-        entityEl.setAttribute('geometry', {
-            primitive: 'box',
-            height: 1,
-            width: 1
-        });
-
-        entityEl.setAttribute('position', '1 2 -3');
-        entityEl.setAttribute('color', 'red');
-
-        var entityEl2 = document.createElement('a-entity');
-        entityEl2.setAttribute('do-something-once-loaded', '');
-        sceneEl.appendChild(entityEl2);
-
-        entityEl2.setAttribute('geometry', {
-            primitive: 'box',
-            height: 1,
-            width: 1
-        });
-
-        entityEl2.setAttribute('position', '-1 2 -3');
-        entityEl2.setAttribute('color', 'red');
     },
 
 
     update: function () {
 
 
+    },
+
+    play: function () {
+        var el = this.el;
+        el.addEventListener('raycaster-intersection', this.onIntersection);
     }
+
+
+
 });

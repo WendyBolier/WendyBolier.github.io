@@ -162,6 +162,18 @@ AFRAME.registerComponent('ui', {
         }
         break;
       }
+      case name === '#testbox.apainter-ui': {
+        document.querySelector('testbox').setAttribute('color', 'red');
+        break;
+      }
+      case name === 'nextB': {
+          if (!this.pressedObjects[name]) {
+              if (window.confirm("JAAAA GELUKT!!") == true) {
+                  this.nextPage();
+              }
+          }
+          break;
+        }
       case name === 'copy': {
         if (!this.pressedObjects[name]) {
           this.copyBrush();
@@ -683,7 +695,7 @@ AFRAME.registerComponent('ui', {
         .easing(AFRAME.TWEEN.Easing.Exponential.Out);
     tween.start();
     this.el.setAttribute('brush', 'enabled', false);
-    this.rayEl.setAttribute('visible', false);
+    //this.rayEl.setAttribute('visible', false);
     this.closed = false;
   },
 

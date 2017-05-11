@@ -112,7 +112,6 @@
   text-align: center;
   padding: 6px;
   float: right;
-  margin-left: 10px;
 }
 
 #apainter-experiment-menu .menu.figure-button {
@@ -130,11 +129,10 @@
   color: #fff;
   cursor: pointer;
   font-size: 12px;
-  width: 90%;
+  width: 60%;
   text-align: center;
   padding: 6px;
-  float: left;
-  margin-left: 10px;
+  margin: auto;
   margin-top: 5px;
 }
 

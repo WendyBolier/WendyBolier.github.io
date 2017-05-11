@@ -7,7 +7,9 @@ require('../vendor/OrbitControls.js');
 
 require('./utils.js');
 require('./ui2d.js');
-require('./experiment-menu-2d');
+require('./experiment-menu-2d.js');
+require('./aabb-collider.js');
+require('./select.js');
 
 require('./systems/brush.js');
 require('./systems/ui.js');
@@ -32,3 +34,4 @@ require('./brushes/spheres.js');
 require('./brushes/cubes.js');
 require('./brushes/rainbow.js');
 require('./brushes/single-sphere.js');
+

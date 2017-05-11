@@ -62,7 +62,6 @@ AFRAME.registerComponent('ui-raycaster', {
     var data = this.data;
     var i;
     var objectEls;
-    var nButton = this.el.querySelector("nextButtonID");
 
     // Push meshes onto list of objects to intersect.
     if (data.objects) {
@@ -71,7 +70,6 @@ AFRAME.registerComponent('ui-raycaster', {
       for (i = 0; i < objectEls.length; i++) {
         this.objects.push(objectEls[i].object3D);
       }
-      this.objects.push(nButton.object3D);
       return;
     }
 
@@ -112,50 +110,50 @@ AFRAME.registerComponent('ui-raycaster', {
 
     // Emit intersected on intersected entity per intersected entity.
     intersections.forEach(function emitEvents (intersection) {
-      var intersectedEl = intersection.object.el;
-      intersectedEl.emit('raycaster-intersected', {el: el, intersection: intersection});
-    });
+    var intersectedEl = intersection.object.el;
+    intersectedEl.emit('raycaster-intersected', {el: el, intersection: intersection});
+});
 
-    // Emit all intersections at once on raycasting entity.
-    if (intersections.length) {
-      el.emit('raycaster-intersection', {
+// Emit all intersections at once on raycasting entity.
+if (intersections.length) {
+    el.emit('raycaster-intersection', {
         els: intersectedEls,
         intersections: intersections
-      });
-    }
-
-    // Emit intersection cleared on both entities per formerly intersected entity.
-    prevIntersectedEls.forEach(function checkStillIntersected (intersectedEl) {
-      if (intersectedEls.indexOf(intersectedEl) !== -1) { return; }
-      el.emit('raycaster-intersection-cleared', {el: intersectedEl});
-      intersectedEl.emit('raycaster-intersected-cleared', {el: el});
     });
-  },
+}
 
-  /**
-   * Set origin and direction of raycaster using entity position and rotation.
-   */
-  updateOriginDirection: (function () {
+// Emit intersection cleared on both entities per formerly intersected entity.
+prevIntersectedEls.forEach(function checkStillIntersected (intersectedEl) {
+    if (intersectedEls.indexOf(intersectedEl) !== -1) { return; }
+    el.emit('raycaster-intersection-cleared', {el: intersectedEl});
+    intersectedEl.emit('raycaster-intersected-cleared', {el: el});
+});
+},
+
+/**
+ * Set origin and direction of raycaster using entity position and rotation.
+ */
+updateOriginDirection: (function () {
     var directionHelper = new THREE.Quaternion();
     var originVec3 = new THREE.Vector3();
     var scaleDummy = new THREE.Vector3();
 
     // Closure to make quaternion/vector3 objects private.
     return function updateOriginDirection () {
-      var el = this.el;
-      var direction = this.direction;
-      var object3D = el.object3D;
+        var el = this.el;
+        var direction = this.direction;
+        var object3D = el.object3D;
 
-      // Update matrix world.
-      object3D.updateMatrixWorld();
-      // Grab the position and rotation.
-      object3D.matrixWorld.decompose(originVec3, directionHelper, scaleDummy);
-      // Apply rotation to a 0, 0, -1 vector.
-      direction.set(0, 0, -1);
-      direction.applyAxisAngle(new THREE.Vector3(1, 0, 0), (this.data.rotation / 360) * 2 * Math.PI);
-      direction.applyQuaternion(directionHelper);
+        // Update matrix world.
+        object3D.updateMatrixWorld();
+        // Grab the position and rotation.
+        object3D.matrixWorld.decompose(originVec3, directionHelper, scaleDummy);
+        // Apply rotation to a 0, 0, -1 vector.
+        direction.set(0, 0, -1);
+        direction.applyAxisAngle(new THREE.Vector3(1, 0, 0), (this.data.rotation / 360) * 2 * Math.PI);
+        direction.applyQuaternion(directionHelper);
 
-      this.raycaster.set(originVec3, direction);
+        this.raycaster.set(originVec3, direction);
     };
-  })()
+})()
 });

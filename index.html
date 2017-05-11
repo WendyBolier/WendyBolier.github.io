@@ -19,10 +19,14 @@
     <script src="src/systems/experiment-menu.js"></script>
     <script src="src/components/paint-controls.js" ></script>
     <script src="src/components/ui.js" ></script>
+    <script src="src/components/ui-raycaster.js" ></script>
     <script src="src/components/experiment-menu.js" ></script>
     <script src="vendor/aframe-teleport-component.min.js"></script>
     <script src="src/components/ptp-drawings.js"></script>
+    <script src="src/components/sbs-drawings.js"></script>
     <script src="src/experiment-menu-2d.js"></script>
+    <script src="src/aabb-collider.js"></script>
+    <script src="src/select.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
@@ -72,12 +76,18 @@
 
         <a-asset-item id="pyramid-3D" src="assets/models/pyramid.obj"></a-asset-item>
 
+        <a-mixin id="cube"
+                 geometry="primitive: box; height: 0.30; width: 0.30; depth: 0.30"
+                 material="color: #EF2D5E;"></a-mixin>
+        <a-mixin id="cube-collided"
+                 material="color: #F2E646;"></a-mixin>
+
       </a-assets>
       <a-light type="point" light="color: #fff; intensity:0.6" position="3 10 1"></a-light>
       <a-light type="point" light="color: #fff; intensity:0.2" position="-3 -10 0"></a-light>
       <a-light type="hemisphere" groundColor="#888" intensity="0.8"></a-light>
-      <!--<a-entity id="logo" obj-model="obj: #logoobj; mtl: #logomtl"></a-entity>-->
-      <!--geometry="primitive: circle; radius: 12;"
+      <!--<a-entity id="logo" obj-model="obj: #logoobj; mtl: #logomtl"></a-entity>
+      geometry="primitive: circle; radius: 12;"
       rotation="-90 0 0"-->
       <a-entity id="hitEntityLeft" material="shader:flat; color: #ff3468" obj-model="obj: #hitEntityObj"></a-entity>
       <a-entity id="hitEntityRight" material="shader:flat; color: #ff3468" obj-model="obj: #hitEntityObj"></a-entity>
@@ -92,6 +102,8 @@
                 paint-controls="hand: left"
                 teleport="ground: #ground; hitCylinderColor: #ff3468; curveHitColor: #ff3468; curveMissColor: #333333; curveLineWidth: 0.01; hitEntity: #hitEntityLeft"
                 ui
+                aabb-collider="objects: .cube;"
+                select
       ></a-entity>
       <a-entity id="right-hand"
                 brush
@@ -99,6 +111,8 @@
                 paint-controls="hand: right"
                 teleport="ground: #ground; hitCylinderColor: #ff3468; curveHitColor: #ff3468; curveMissColor: #333333; curveLineWidth: 0.01; hitEntity: #hitEntityRight"
                 ui
+                aabb-collider="objects: .cube;"
+                select
       ></a-entity>
       <a-entity id="sky" geometry="primitive:sphere; radius:30; phiLength:360; phiStart:0; thetaLength:90" material="shader:flat; side:back; height:2048; src:#skymap; width:2048"></a-entity>
       <a-entity id="acamera" camera look-controls-alt orbit-controls></a-entity>
@@ -106,6 +120,8 @@
       <!-- Test -->
 
 <!-- <a-entity ptp-drawings ></a-entity> WERKT! -->
+
+      <a-entity sbs-drawings ></a-entity>
 
       <!-- MOVING TEST DOT -->
       <a-sphere color="red" position="0 2 -5" radius="0.05" visible="false">
@@ -166,10 +182,24 @@
      <!-- <a-obj-model src="assets/models/Step-by-step/SmallChurch/smallchurch-0.obj" mtl="assets/models/Step-by-step/SmallChurch/smallchurch-0.mtl" position="-1 0.5 -1" scale="0.1 0.1 0.1" rotation="0 90 0" ></a-obj-model>
 
       <a-obj-model src="assets/models/Step-by-step/Tree/tree-full.obj" mtl="assets/models/Step-by-step/Tree/tree-full.mtl" position="-1 0.5 -1" scale="0.3 0.3 0.3" rotation="0 0 0" ></a-obj-model>
--->
+
       <a-obj-model src="assets/models/cartoonCottageHouse.obj" mtl="assets/models/cartoonCottageHouse.mtl" position="-1 0.5 -1" scale="0.1 0.1 0.1" rotation="0 0 0" ></a-obj-model>
 
+      <a-image name="nextB" id="nextButtonID" src="assets/images/buttons/next.png" position="0 0.5 -1.5" scale="0.5 0.5 0.5" class="apainter-ui"></a-image>
+-->
+
+    <!--  <a-obj-model src="assets/models/Step-by-step/Chicken/Chicken-4.obj" mtl="assets/models/Step-by-step/Chicken/Chicken-4.mtl" position="-1 0.5 -1" scale="0.1 0.1 0.1" rotation="0 90 0" ></a-obj-model>
+
+-->
+      <a-box id="testbox" name="testbox" class="apainter-ui" color="blue" position="-1 1 -1" scale="0.5 0.5 0.5" ></a-box>
+
+
+
+      <a-entity class="cube" mixin="cube" position="0.30 1.65 0"></a-entity>
+      <a-entity class="cube" mixin="cube" position="0 1.95 0"></a-entity>
+
     </a-scene>
+
 
     <a href="https://aframe.io/a-painter/"><div id="apainter-logo" class="hidden"></div><div id="apainter-author" style="display:none" class="hidden">authorname</div></a>
     <div id="apainter-ui">
@@ -225,6 +255,7 @@
 
       <input type="image" src="assets/images/buttons/tree.png" name="tree" class="menu figure-button" id="tree-button" onclick="openFigure(9)" />
       <input type="image" src="assets/images/buttons/smallchurch.png" name="smallchurch" class="menu figure-button" id="smallchurch-button" onclick="openFigure(10)" />
+      <input type="image" src="assets/images/buttons/chicken.png" name="chicken" class="menu figure-button" id="chicken-button" onclick="openFigure(11)" />
 
       <div class="menu text">
         <p>Point-to-point</p>
@@ -239,8 +270,8 @@
       <input type="image" src="assets/images/buttons/firefly.png" name="firefly" class="menu figure-button" id="firefly-button" onclick="openFigure(7)"/>
       <input type="image" src="assets/images/buttons/polarbear.png" name="polarbear" class="menu figure-button" id="polarbear-button" onclick="openFigure(8)"/>
 
-      <div class="menu wide-button">Graded assignment 1</div> <br>
-      <div class="menu wide-button">Graded assignment 2</div> <br>
+      <div class="menu wide-button">Graded assignment 1</div>
+      <div class="menu wide-button">Graded assignment 2</div>
       <div onclick="openFigure()" class="menu wide-button">Free drawing</div>
 
     </div>
