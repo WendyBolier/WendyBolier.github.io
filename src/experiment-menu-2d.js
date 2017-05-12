@@ -97,6 +97,14 @@ function openFigure(f) {
             startsbsdrawing(3);
             break;
 
+        case 12:
+            if(slider.checked) {
+            }
+            else {
+                document.querySelector("#cone3Did").setAttribute('visible', 'true');
+            }
+            break;
+
         default:
             break;
     }
@@ -191,10 +199,18 @@ function sbsTree(step) {
         treeEl.setAttribute('visible', 'true');
     }
     else if(step === 2) {
+        treeEl.setAttribute('src', 'assets/models/Step-by-step/Tree/tree-2.obj');
+        treeEl.setAttribute('mtl', 'assets/models/Step-by-step/Tree/tree-2.mtl');
+    }
+    else if(step === 3) {
+        treeEl.setAttribute('src', 'assets/models/Step-by-step/Tree/tree-3.obj');
+        treeEl.setAttribute('mtl', 'assets/models/Step-by-step/Tree/tree-3.mtl');
+    }
+    else if(step === 4) {
         treeEl.setAttribute('src', 'assets/models/Step-by-step/Tree/tree-full.obj');
         treeEl.setAttribute('mtl', 'assets/models/Step-by-step/Tree/tree-full.mtl');
     }
-    else if(step === 3) {
+    else if(step === 5) {
         lastStep();
     }
 }
@@ -247,30 +263,30 @@ function sbsSmallChurch(step) {
     }
 }
 
-function sbsChicken() {
+function sbsChicken(step) {
     this.step = step;
     var chickenEl = document.querySelector("#chicken");
 
     if(step === 1) {
-        chickenEl.setAttribute('src', 'assets/models/Step-by-step/Chicken/chicken-2.obj');
-        chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/chicken-2.mtl');
+        chickenEl.setAttribute('src', 'assets/models/Step-by-step/Chicken/Chicken-1.obj');
+        chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/Chicken-1.mtl');
         chickenEl.setAttribute('visible', 'true');
     }
     else if(step === 2) {
-        chickenEl.setAttribute('src', 'assets/models/Step-by-step/Chicken/chicken-2.obj');
-        chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/chicken-2.mtl');
+        chickenEl.setAttribute('src', 'assets/models/Step-by-step/Chicken/Chicken-2.obj');
+        chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/Chicken-2.mtl');
     }
     else if(step === 3) {
-        chickenEl.setAttribute('src', 'assets/models/Step-by-step/Chicken/chicken-3.obj');
-        chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/chicken-3.mtl');
+        chickenEl.setAttribute('src', 'assets/models/Step-by-step/Chicken/Chicken-3.obj');
+        chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/Chicken-3.mtl');
     }
     else if(step === 4) {
-        chickenEl.setAttribute('src', 'assets/models/Step-by-step/Chicken/chicken-4.obj');
-        chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/chicken-4.mtl');
+        chickenEl.setAttribute('src', 'assets/models/Step-by-step/Chicken/Chicken-4.obj');
+        chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/Chicken-4.mtl');
     }
     else if(step === 5) {
-        chickenEl.setAttribute('src', 'assets/models/Step-by-step/Chicken/chicken-full.obj');
-        chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/chicken-full.mtl');
+        chickenEl.setAttribute('src', 'assets/models/Step-by-step/Chicken/Chicken-full.obj');
+        chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/Chicken-full.mtl');
     }
     else if(step === 6) {
         lastStep();

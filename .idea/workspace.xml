@@ -2,29 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9a1e22d-1024-4e14-85d2-6b29cadcc41a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-1.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/grab.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-1obj.obj" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/buttons/finished.png" afterPath="$PROJECT_DIR$/assets/images/buttons/finished.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/buttons/next.png" afterPath="$PROJECT_DIR$/assets/images/buttons/next.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-0.mtl" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-0.mtl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-0.obj" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-0.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-2.mtl" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-2.mtl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-2.obj" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-2.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-3.mtl" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-3.mtl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-3.obj" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-3.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-4.mtl" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-4.mtl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-4.obj" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-4.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-5.mtl" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-5.mtl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-5.obj" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-5.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-full.mtl" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-full.mtl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-full.obj" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-full.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/Chicken/Chicken-1.mtl" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/Chicken/Chicken-1.mtl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/Chicken/Chicken-1.obj" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/Chicken/Chicken-1.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/Chicken/Chicken-2.mtl" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/Chicken/Chicken-2.mtl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/Chicken/Chicken-2.obj" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/Chicken/Chicken-2.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/Chicken/Chicken-3.mtl" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/Chicken/Chicken-3.mtl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/Chicken/Chicken-3.obj" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/Chicken/Chicken-3.obj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/sbs-drawings.js" afterPath="$PROJECT_DIR$/src/components/sbs-drawings.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/experiment-menu-2d.js" afterPath="$PROJECT_DIR$/src/experiment-menu-2d.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/select.js" afterPath="$PROJECT_DIR$/src/select.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-1obj.mtl" afterPath="$PROJECT_DIR$/assets/models/Step-by-step/SmallChurch/smallchurch-1.mtl" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,8 +34,8 @@
       <file leaf-file-name="select.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/select.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+            <state relative-caret-position="1323">
+              <caret line="63" column="5" lean-forward="false" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -60,7 +46,7 @@
       <file leaf-file-name="aabb-collider.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aabb-collider.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
+            <state relative-caret-position="441">
               <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="16" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -82,8 +68,8 @@
       <file leaf-file-name="experiment-menu-2d.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/experiment-menu-2d.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="255" column="83" lean-forward="false" selection-start-line="255" selection-start-column="83" selection-end-line="255" selection-end-column="83" />
+            <state relative-caret-position="597">
+              <caret line="103" column="45" lean-forward="false" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -93,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -102,7 +88,7 @@
       <file leaf-file-name="sbs-drawings.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/sbs-drawings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
+            <state relative-caret-position="693">
               <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="e#0#44#0" expanded="false" />
@@ -114,8 +100,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="228" column="33" lean-forward="true" selection-start-line="228" selection-start-column="33" selection-end-line="228" selection-end-column="33" />
+            <state relative-caret-position="242">
+              <caret line="165" column="131" lean-forward="false" selection-start-line="165" selection-start-column="131" selection-end-line="165" selection-end-column="131" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -217,8 +203,8 @@
         <option value="$PROJECT_DIR$/src/systems/grab.js" />
         <option value="$PROJECT_DIR$/src/components/sbs-drawings.js" />
         <option value="$PROJECT_DIR$/src/select.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/experiment-menu-2d.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -396,6 +382,10 @@
               <option name="myItemId" value="Step-by-step" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -416,10 +406,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Step-by-step" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chicken" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -607,7 +593,9 @@
       <workItem from="1494432610477" duration="8889000" />
       <workItem from="1494454097081" duration="20249000" />
       <workItem from="1494551862048" duration="10021000" />
-      <workItem from="1494561969432" duration="5493000" />
+      <workItem from="1494561969432" duration="5609000" />
+      <workItem from="1494567772716" duration="584000" />
+      <workItem from="1494599309804" duration="3790000" />
     </task>
     <task id="LOCAL-00001" summary="2D en 3D vis toegevoegd">
       <created>1492528309354</created>
@@ -644,11 +632,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494475249902</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed buttons">
+      <created>1494567549248</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1494567549248</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163989000" />
+    <option name="totallyTimeSpent" value="168479000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -667,8 +662,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.13958333" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1470911" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24698134" sideWeight="0.49790135" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24698134" sideWeight="0.49790135" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33975086" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -735,7 +730,8 @@
     <MESSAGE value="Begonnen aan 2D menu" />
     <MESSAGE value="2D menu, basic figures, started with step by step drawings" />
     <MESSAGE value="step by step drawings" />
-    <option name="LAST_COMMIT_MESSAGE" value="step by step drawings" />
+    <MESSAGE value="fixed buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed buttons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1014,7 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7497">
           <caret line="357" column="33" lean-forward="false" selection-start-line="357" selection-start-column="32" selection-end-line="357" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,7 +1042,7 @@
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1062,7 +1057,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/aabb-collider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
+        <state relative-caret-position="441">
           <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="16" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -1072,10 +1067,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/sbs-drawings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
+        <state relative-caret-position="693">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="63" column="5" lean-forward="false" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1088,28 +1093,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/select.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/experiment-menu-2d.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="255" column="83" lean-forward="false" selection-start-line="255" selection-start-column="83" selection-end-line="255" selection-end-column="83" />
+        <state relative-caret-position="597">
+          <caret line="103" column="45" lean-forward="false" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="228" column="33" lean-forward="true" selection-start-line="228" selection-start-column="33" selection-end-line="228" selection-end-column="33" />
+        <state relative-caret-position="242">
+          <caret line="165" column="131" lean-forward="false" selection-start-line="165" selection-start-column="131" selection-end-line="165" selection-end-column="131" />
           <folding>
             <element signature="n#style#0;n#div#1;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

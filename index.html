@@ -157,16 +157,16 @@
       <a-box id="cube3Did" class="figure" color="blue" position="-1 1 -1" scale="0.5 0.5 0.5" visible="false"></a-box>
 
       <!-- SPHERE -->
-      <a-sphere id="sphere3Did" class="figure" color="red" position="-1 1 -1" scale="0.5 0.5 0.5" visible="false"></a-sphere>
+      <a-sphere id="sphere3Did" class="figure" color="red" position="-1 0.8 -1" scale="0.25 0.25 0.25" visible="false"></a-sphere>
 
       <!-- CYLINDER -->
-      <a-cylinder id="cylinder3Did" class="figure" color="yellow" position="-1 1 -1" height="1.5" radius="0.5" scale="0.5 0.5 0.5" visible="false"></a-cylinder>
+      <a-cylinder id="cylinder3Did" class="figure" color="yellow" position="-1 0.8 -1" height="1.5" radius="0.5" scale="0.25 0.25 0.25" visible="false"></a-cylinder>
 
       <!-- CONE -->
-      <a-cone color="green" position="-1 1 -1" radius-bottom="1.5" radius-top="0" scale="0.5 0.5 0.5" visible="false"></a-cone>
+      <a-cone id="cone3Did" class="figure" color="#9933ff" position="-1 1 -1" radius-bottom="0.7" radius-top="0" scale="0.4 0.4 0.4" visible="false"></a-cone>
 
       <!-- PYRAMID -->
-      <a-obj-model id="pyramid3Did" class="figure" src="#pyramid-3D" scale="0.3 0.3 0.3" position="-1 1 -1" visible="false" color="green"></a-obj-model>
+      <a-obj-model id="pyramid3Did" position="-1 0.6 -1" class="figure" src="#pyramid-3D" scale="0.3 0.3 0.3" position="-1 1 -1" visible="false" color="green"></a-obj-model>
 
       <!-- HOUSE -->
       <a-image id="house2Did" src="#house2D" class="figure" position="1 1 -1" scale="1.2 1.2 1.2" visible="false"></a-image>
@@ -218,7 +218,7 @@
 
       <a-obj-model id="tree" class="figure" src="assets/models/Step-by-step/Tree/tree-1.obj" mtl="assets/models/Step-by-step/Tree/tree-1.mtl" position="-1 0.5 -1" scale="0.3 0.3 0.3" rotation="0 0 0" visible="false"></a-obj-model>
       <a-obj-model id="church" class="figure" src="assets/models/Step-by-step/SmallChurch/smallchurch-0.obj" mtl="assets/models/Step-by-step/SmallChurch/smallchurch-0.mtl" position="-1 0.5 -1" scale="0.1 0.1 0.1" rotation="0 90 0" visible="false"></a-obj-model>
-      <a-obj-model id="chicken" class="figure" src="assets/models/Step-by-step/Chicken/Chicken.obj" mtl="assets/models/Step-by-step/Chicken/Chicken.mtl" position="-1 0.5 -1" scale="0.1 0.1 0.1" rotation="0 90 0" visible="false"></a-obj-model>
+      <a-obj-model id="chicken" class="figure" src="assets/models/Step-by-step/Chicken/Chicken-1.obj" mtl="assets/models/Step-by-step/Chicken/Chicken-1.mtl" position="-1 0.5 -1" scale="0.15 0.15 0.15" rotation="0 90 0" visible="false"></a-obj-model>
 
     </a-scene>
 
@@ -272,6 +272,7 @@
       <input type="image" src="assets/images/buttons/pyramid.png" name="pyramid" class="menu figure-button" id="pyramid-button" onclick="openFigure(2)"/>
       <input type="image" src="assets/images/buttons/sphere.png" name="sphere" class="menu figure-button" id="sphere-button" onclick="openFigure(3)"/>
       <input type="image" src="assets/images/buttons/cylinder.png" name="cylinder" class="menu figure-button" id="cylinder-button" onclick="openFigure(4)"/>
+      <input type="image" src="assets/images/buttons/cone2.png" name="cone" class="menu figure-button" id="cone-button" onclick="openFigure(12)"/>
       <br>
       <div class="menu text">
         <p>Step-by-step</p>
