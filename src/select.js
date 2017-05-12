@@ -10,8 +10,9 @@ AFRAME.registerComponent('select', {
         this.onGripOpen = this.onGripOpen.bind(this);
         this.onGripClose = this.onGripClose.bind(this);
 
-        this.sw = 0;
         this.c = 0;
+        this.selecting = false;
+        this.done = false;
     },
 
     play: function () {
@@ -19,8 +20,6 @@ AFRAME.registerComponent('select', {
         el.addEventListener('hit', this.onHit);
         el.addEventListener('gripclose', this.onGripClose);
         el.addEventListener('gripopen', this.onGripOpen);
-
-        el.addEventListener('triggerchanged', this.onTriggerChanged);
     },
 
     pause: function () {
@@ -30,41 +29,38 @@ AFRAME.registerComponent('select', {
         el.removeEventListener('gripopen', this.onGripOpen);
     },
 
-    onTriggerChanged: function (evt) {
-        var hitEl = this.hitEl;
-        console.log("HIT");
-        document.querySelector("#testbox").setAttribute('color', 'yellow');
-    },
-
     onGripClose: function (evt) {
-        document.querySelector("#testbox").setAttribute('color', 'yellow');
-        /*
-        if(this.sw === 1) {
-            return;
-        }
-        var hitEl = this.hitEl;
-        console.log("HIT");
-        if(this.c === 0)
-        {
-            document.querySelector("#testbox").setAttribute('color', 'yellow');
-            this.c =1;
-        }
-        else {
-            document.querySelector("#testbox").setAttribute('color', 'red');
-            this.c =0;
-        }
+        this.selecting = true;
 
-        this.sw = 1;*/
     },
 
     onGripOpen: function (evt) {
-        var hitEl = this.hitEl;
-        this.sw = 0;
+        this.selecting = false;
+        this.done = false;
+
     },
 
     onHit: function (evt) {
         var hitEl = evt.detail.el;
         this.hitEl = hitEl;
-    },
+
+        if((hitEl !== null) && (this.done === false) && (this.selecting === true)) {
+            if(hitEl.id === "nextButton") {
+                console.log("Next button hit");
+                sbsNextStep();
+                this.done = true;
+            }
+            else if(hitEl.id === "previousButton") {
+                sbsPreviousStep();
+                this.done = true;
+            }
+            else if(hitEl.id === "finishedButton") {
+                console.log("Finished button hit");
+                pressedFinished();
+                this.done = true;
+            }
+        }
+
+    }
 
 });

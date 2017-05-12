@@ -13,6 +13,7 @@ function toggleMenuVisibility() {
 function openFigure(f) {
     var slider = document.getElementById("slider");
     removeAllFiguresFromScene();
+    resetSbs();
 
     switch(f) {
         case 1:
@@ -85,11 +86,15 @@ function openFigure(f) {
             break;
 
         case 9:
-            sbsTree();
+            startsbsdrawing(1);
             break;
 
         case 10:
-            sbsSmallChurch();
+            startsbsdrawing(2);
+            break;
+
+        case 11:
+            startsbsdrawing(3);
             break;
 
         default:
@@ -104,36 +109,186 @@ function removeAllFiguresFromScene() {
     }
 }
 
-function sbsTree() {
+function resetSbs() {
+    var next =  document.querySelector("#nextButton");
+    var previous =  document.querySelector("#previousButton");
+    var finished =  document.querySelector("#finishedButton");
+
+    next.setAttribute('visible', 'false');
+    previous.setAttribute('visible', 'false');
+    finished.setAttribute('visible', 'false');
 
 }
 
-function sbsSmallChurch() {
-    var sceneEl = document.querySelector('a-scene');
-    var churchEl = document.createElement('a-obj-model');
-    sceneEl.appendChild(churchEl);
+function startsbsdrawing(num) {
+    var next =  document.querySelector("#nextButton");
+    var previous =  document.querySelector("#previousButton");
+    var finished =  document.querySelector("#finishedButton");
 
-    churchEl.setAttribute('src', 'assets/models/Step-by-step/SmallChurch/smallchurch-0.obj');
-    churchEl.setAttribute('mtl', 'assets/models/Step-by-step/SmallChurch/smallchurch-0.mtl');
-    churchEl.setAttribute('position', '-1 0.5 -1');
-    churchEl.setAttribute('scale', '0.1 0.1 0.1');
-    churchEl.setAttribute('rotation', '0 90 0');
-    churchEl.setAttribute('material.side', 'THREE.DoubleSide');
+    next.setAttribute('visible', 'true');
+    previous.setAttribute('visible', 'true');
+    finished.setAttribute('visible', 'false');
 
-    var nextButton = document.createElement('a-image');
-    sceneEl.appendChild(nextButton);
+    this.drawing = num;
+    this.step = 1;
 
-    nextButton.setAttribute('id', 'nextButtonID');
-    nextButton.setAttribute('src', 'assets/images/buttons/next.png');
-    nextButton.setAttribute('position', '0 0.5 -1.5');
-    nextButton.setAttribute('scale', '0.5 0.5 0.5');
-    nextButton.setAttribute('class', 'apainter-ui');
-
-
-
-
-
-    // if button pressed next step
+    switch(num) {
+        case 1:
+            sbsTree(this.step);
+            break;
+        case 2:
+            sbsSmallChurch(this.step);
+            break;
+        case 3:
+            sbsChicken(this.step);
+            break;
+        default:
+            break;
+    }
 }
 
+function sbsNextStep() {
+    switch(this.drawing) {
+        case 1:
+            sbsTree(this.step + 1);
+            break;
+        case 2:
+            sbsSmallChurch(this.step + 1);
+            break;
+        case 3:
+            sbsChicken(this.step + 1);
+            break;
+        default:
+            break;
+    }
+}
 
+function sbsPreviousStep() {
+    if(this.step > 1) {
+        switch (this.drawing) {
+            case 1:
+                sbsTree(this.step - 1);
+                break;
+            case 2:
+                sbsSmallChurch(this.step - 1);
+                break;
+            case 3:
+                sbsChicken(this.step - 1);
+                break;
+            default:
+                break;
+        }
+    }
+}
+
+function sbsTree(step) {
+    this.step = step;
+    var treeEl = document.querySelector("#tree");
+
+    if(step === 1) {
+        treeEl.setAttribute('src', 'assets/models/Step-by-step/Tree/tree-1.obj');
+        treeEl.setAttribute('mtl', 'assets/models/Step-by-step/Tree/tree-1.mtl');
+        treeEl.setAttribute('visible', 'true');
+    }
+    else if(step === 2) {
+        treeEl.setAttribute('src', 'assets/models/Step-by-step/Tree/tree-full.obj');
+        treeEl.setAttribute('mtl', 'assets/models/Step-by-step/Tree/tree-full.mtl');
+    }
+    else if(step === 3) {
+        lastStep();
+    }
+}
+
+function sbsSmallChurch(step) {
+    this.step = step;
+    //var sceneEl = document.querySelector('a-scene');
+    var churchEl = document.querySelector("#church");
+
+    if(step === 1) {
+        //var sceneEl = document.querySelector('a-scene');
+        //var churchEl = document.createElement('a-obj-model');
+        //sceneEl.appendChild(churchEl);
+        //churchEl.setAttribute('position', '-1 0.5 -1');
+        //churchEl.setAttribute('scale', '0.1 0.1 0.1');
+       // churchEl.setAttribute('rotation', '0 90 0');
+        churchEl.setAttribute('src', 'assets/models/Step-by-step/SmallChurch/smallchurch-0.obj');
+        churchEl.setAttribute('mtl', 'assets/models/Step-by-step/SmallChurch/smallchurch-0.mtl');
+       // churchEl.setAttribute('class', 'figure');
+        //this.churchEl = churchEl;
+        churchEl.setAttribute('visible', 'true');
+    }
+    else if(step === 2) {
+
+        churchEl.setAttribute('src', 'assets/models/Step-by-step/SmallChurch/smallchurch-1.obj');
+        churchEl.setAttribute('mtl', 'assets/models/Step-by-step/SmallChurch/smallchurch-1.mtl');
+    }
+    else if(step === 3) {
+        churchEl.setAttribute('src', 'assets/models/Step-by-step/SmallChurch/smallchurch-2.obj');
+        churchEl.setAttribute('mtl', 'assets/models/Step-by-step/SmallChurch/smallchurch-2.mtl');
+}
+    else if(step === 4) {
+        churchEl.setAttribute('src', 'assets/models/Step-by-step/SmallChurch/smallchurch-3.obj');
+        churchEl.setAttribute('mtl', 'assets/models/Step-by-step/SmallChurch/smallchurch-3.mtl');
+    }
+    else if(step === 5) {
+        churchEl.setAttribute('src', 'assets/models/Step-by-step/SmallChurch/smallchurch-4.obj');
+        churchEl.setAttribute('mtl', 'assets/models/Step-by-step/SmallChurch/smallchurch-4.mtl');
+    }
+    else if(step === 6) {
+        churchEl.setAttribute('src', 'assets/models/Step-by-step/SmallChurch/smallchurch-5.obj');
+        churchEl.setAttribute('mtl', 'assets/models/Step-by-step/SmallChurch/smallchurch-5.mtl');
+    }
+    else if(step === 7) {
+        churchEl.setAttribute('src', 'assets/models/Step-by-step/SmallChurch/smallchurch-full.obj');
+        churchEl.setAttribute('mtl', 'assets/models/Step-by-step/SmallChurch/smallchurch-full.mtl');
+    }
+    else if(step === 8) {
+        lastStep();
+    }
+}
+
+function sbsChicken() {
+    this.step = step;
+    var chickenEl = document.querySelector("#chicken");
+
+    if(step === 1) {
+        chickenEl.setAttribute('src', 'assets/models/Step-by-step/Chicken/chicken-2.obj');
+        chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/chicken-2.mtl');
+        chickenEl.setAttribute('visible', 'true');
+    }
+    else if(step === 2) {
+        chickenEl.setAttribute('src', 'assets/models/Step-by-step/Chicken/chicken-2.obj');
+        chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/chicken-2.mtl');
+    }
+    else if(step === 3) {
+        chickenEl.setAttribute('src', 'assets/models/Step-by-step/Chicken/chicken-3.obj');
+        chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/chicken-3.mtl');
+    }
+    else if(step === 4) {
+        chickenEl.setAttribute('src', 'assets/models/Step-by-step/Chicken/chicken-4.obj');
+        chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/chicken-4.mtl');
+    }
+    else if(step === 5) {
+        chickenEl.setAttribute('src', 'assets/models/Step-by-step/Chicken/chicken-full.obj');
+        chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/chicken-full.mtl');
+    }
+    else if(step === 6) {
+        lastStep();
+    }
+}
+
+function lastStep() {
+
+    var next =  document.querySelector("#nextButton");
+    var previous =  document.querySelector("#previousButton");
+    var finished =  document.querySelector("#finishedButton");
+
+    next.setAttribute('visible', 'false');
+    previous.setAttribute('visible', 'false');
+    finished.setAttribute('visible', 'true');
+}
+
+function pressedFinished() {
+    removeAllFiguresFromScene();
+    startsbsdrawing(this.drawing);
+}

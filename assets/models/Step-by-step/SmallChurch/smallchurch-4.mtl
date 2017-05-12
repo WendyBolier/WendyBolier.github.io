@@ -1,8 +1,8 @@
-# Blender MTL File: 'minicastle-full.blend'
+# Blender MTL File: 'None'
 # Material Count: 4
 
-newmtl glos_none_spec1
-Ns 96.078431
+newmtl glos_none_spec1.002
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000
@@ -11,8 +11,8 @@ Ni 1.000000
 d 1.000000
 illum 2
 
-newmtl glos_norm_roof5
-Ns 96.078431
+newmtl glos_norm_roof5.005
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.273907 0.004969 0.002501
 Ks 0.500000 0.010669 0.020030
@@ -21,8 +21,8 @@ Ni 1.000000
 d 1.000000
 illum 2
 
-newmtl matt_norm_stone1
-Ns 96.078431
+newmtl matt_norm_stone1.006
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.397539 0.158863 0.084780
 Ks 0.500000 0.500000 0.500000
@@ -32,7 +32,7 @@ d 1.000000
 illum 2
 
 newmtl matt_norm_stone10
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000

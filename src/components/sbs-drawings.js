@@ -27,13 +27,14 @@ AFRAME.registerComponent('sbs-drawings', {
 
     update: function () {
 
-
     },
 
     play: function () {
-        var el = this.el;
-        el.addEventListener('raycaster-intersection', this.onIntersection);
+
     }
+
+
+
 
 
 
