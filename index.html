@@ -22,8 +22,6 @@
     <script src="src/components/ui-raycaster.js" ></script>
     <script src="src/components/experiment-menu.js" ></script>
     <script src="vendor/aframe-teleport-component.min.js"></script>
-    <script src="src/components/ptp-drawings.js"></script>
-    <script src="src/components/sbs-drawings.js"></script>
     <script src="src/experiment-menu-2d.js"></script>
     <script src="src/aabb-collider.js"></script>
     <script src="src/select.js"></script>
@@ -83,6 +81,9 @@
         <a-asset-item id="fish2-mtl" src="assets/models/TropicalFish08.mtl"></a-asset-item>
 
         <a-asset-item id="pyramid-3D" src="assets/models/pyramid.obj"></a-asset-item>
+
+        <a-asset-item id="chicken-full" src="assets/models/Step-by-step/Chicken/Chicken-full.obj"></a-asset-item>
+        <a-asset-item id="chicken-full-mtl" src="assets/models/Step-by-step/Chicken/Chicken-full.mtl"></a-asset-item>
 
         <a-mixin id="nextcube"
                  geometry="primitive: box; height: 0.10; width: 0.30; depth: 0.10"
@@ -154,16 +155,16 @@
 
       <!-- CUBE -->
       <a-image id="cube2Did" class="figure" src="#cube2D" position="1 1 -1" scale="0.7 0.7 0.7" visible="false" ></a-image>
-      <a-box id="cube3Did" class="figure" color="blue" position="-1 1 -1" scale="0.5 0.5 0.5" visible="false"></a-box>
+      <a-box id="cube3Did" wireframe="true" class="figure" color="blue" position="-1 1 -1" scale="0.5 0.5 0.5" visible="false"></a-box>
 
       <!-- SPHERE -->
-      <a-sphere id="sphere3Did" class="figure" color="red" position="-1 0.8 -1" scale="0.25 0.25 0.25" visible="false"></a-sphere>
+      <a-sphere id="sphere3Did" wireframe="true" class="figure" color="red" position="-1 0.8 -1" scale="0.25 0.25 0.25" visible="false"></a-sphere>
 
       <!-- CYLINDER -->
-      <a-cylinder id="cylinder3Did" class="figure" color="yellow" position="-1 0.8 -1" height="1.5" radius="0.5" scale="0.25 0.25 0.25" visible="false"></a-cylinder>
+      <a-cylinder id="cylinder3Did" wireframe="true" class="figure" color="yellow" position="-1 0.8 -1" height="1.5" radius="0.5" scale="0.25 0.25 0.25" visible="false"></a-cylinder>
 
       <!-- CONE -->
-      <a-cone id="cone3Did" class="figure" color="#9933ff" position="-1 1 -1" radius-bottom="0.7" radius-top="0" scale="0.4 0.4 0.4" visible="false"></a-cone>
+      <a-cone id="cone3Did" class="figure" color="#9933ff" position="-1 1 -1" radius-bottom="0.7" radius-top="0" scale="0.4 0.4 0.4" wireframe="true" visible="false"></a-cone>
 
       <!-- PYRAMID -->
       <a-obj-model id="pyramid3Did" position="-1 0.6 -1" class="figure" src="#pyramid-3D" scale="0.3 0.3 0.3" position="-1 1 -1" visible="false" color="green"></a-obj-model>
@@ -261,6 +262,7 @@
       </label>
 
       <div class="menu-button" id="toggleMenuButton" onclick="toggleMenuVisibility()">MENU</div>
+      <!--<div class="menu-button" onclick="sbsNextStep()">NEXT STEP</div>-->
       <br>
       <br>
 
@@ -295,9 +297,20 @@
       <input type="image" src="assets/images/buttons/firefly.png" name="firefly" class="menu figure-button" id="firefly-button" onclick="openFigure(7)"/>
       <input type="image" src="assets/images/buttons/polarbear.png" name="polarbear" class="menu figure-button" id="polarbear-button" onclick="openFigure(8)"/>
 
-      <div class="menu wide-button">Graded assignment 1</div>
-      <div class="menu wide-button">Graded assignment 2</div>
-      <div onclick="openFigure()" class="menu wide-button">Free drawing</div>
+      <div class="menu text">
+        <p>Graded assignments</p>
+      </div>
+
+
+      <div>
+      <input type="button" value="Graded assignment 1" class="menu wide-button"/>
+      <input type="button" value="Graded assignment 2" class="menu wide-button"/>
+      <input type="button" value="Free drawing" onclick="openFigure()" class="menu wide-button"/>
+
+      <input type="button" value="Save" onclick="directToUpload()" class="menu wide-button"/>
+      <input type="button" value="Clear" onclick="directToClear()" class="menu wide-button"/>
+
+      </div>
 
     </div>
 

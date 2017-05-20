@@ -96,14 +96,15 @@
   position: absolute;
   right: 20px;
   top: 20px;
+  width: 300px;
   line-height: 1.2em;
   background-color: rgba(10,10,10,0.8);
   border-radius: 6px;
   padding: 0.8em 1em;
+  display: inline;
 }
 
 #apainter-experiment-menu .menu-button {
-  position: relative;
   background-color: #ef2d5e;
   color: #fff;
   cursor: pointer;
@@ -115,7 +116,6 @@
 }
 
 #apainter-experiment-menu .menu.figure-button {
-  position: relative;
   cursor: pointer;
   width: 50px;
   margin-left: 5px;
@@ -124,7 +124,6 @@
 }
 
 #apainter-experiment-menu .menu.wide-button {
-  position: relative;
   background-color: #ef2d5e;
   color: #fff;
   cursor: pointer;
@@ -132,8 +131,7 @@
   width: 60%;
   text-align: center;
   padding: 6px;
-  margin: auto;
-  margin-top: 5px;
+  margin-top : 5px;
 }
 
 #apainter-experiment-menu .menu.text{

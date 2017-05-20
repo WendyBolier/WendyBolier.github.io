@@ -285,8 +285,8 @@ function sbsChicken(step) {
         chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/Chicken-4.mtl');
     }
     else if(step === 5) {
-        chickenEl.setAttribute('src', 'assets/models/Step-by-step/Chicken/Chicken-full.obj');
-        chickenEl.setAttribute('mtl', 'assets/models/Step-by-step/Chicken/Chicken-full.mtl');
+        chickenEl.setAttribute('src', '#chicken-full');
+        chickenEl.setAttribute('mtl', '#chicken-full-mtl');
     }
     else if(step === 6) {
         lastStep();
@@ -307,4 +307,16 @@ function lastStep() {
 function pressedFinished() {
     removeAllFiguresFromScene();
     startsbsdrawing(this.drawing);
+}
+
+function directToUpload() {
+    var sceneEl = document.querySelector('a-scene');
+    sceneEl.systems.painter.upload();
+}
+
+function directToClear() {
+    var sceneEl = document.querySelector('a-scene');
+    if (window.confirm("Weet je zeker dat je alles wilt verwijderen?") == true) {
+        sceneEl.systems.brush.clear();
+    }
 }

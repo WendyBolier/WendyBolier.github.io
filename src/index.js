@@ -26,7 +26,6 @@ require('./components/paint-controls.js');
 require('./components/ui.js');
 require('./components/ui-raycaster.js');
 require('./components/experiment-menu.js');
-require('./components/ptp-drawings.js');
 
 require('./brushes/line.js');
 require('./brushes/stamp.js');
