@@ -105,6 +105,20 @@ function openFigure(f) {
             }
             break;
 
+        case 13:
+            if(slider.checked) {
+                document.querySelector("#gardenHouse2Did").setAttribute('visible', 'true');
+            }
+            else {
+                document.querySelector("#gardenHouse3Did").setAttribute('visible', 'true');
+            }
+            break;
+
+        case 14:
+            document.querySelector("#knut2Did").setAttribute('visible', 'true');
+            document.querySelector("#knut3Did").setAttribute('visible', 'true');
+            break;
+
         default:
             break;
     }
