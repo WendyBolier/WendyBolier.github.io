@@ -35,6 +35,17 @@
   padding: 6px;
 }
 
+#apainter-ui .close-button {
+  background-color: #ef2d5e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  width: 130px;
+  text-align: center;
+  max-width: 115px;
+  padding: 6px;
+}
+
 #apainter-ui .button:hover {
   background-color: #f43b6a;
 }

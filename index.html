@@ -44,6 +44,8 @@
         <img id="previousc" src="assets/images/buttons/previousc.png">
         <img id="finished" src="assets/images/buttons/finished.png">
         <img id="finishedc" src="assets/images/buttons/finishedc.png">
+        <img id="help" src="assets/images/buttons/help.png">
+        <img id="helpc" src="assets/images/buttons/helpc.png">
 
         <a-asset-item id="logoobj" src="assets/models/logo.obj"></a-asset-item>
         <a-asset-item id="logomtl" src="assets/models/logo.mtl"></a-asset-item>
@@ -80,7 +82,7 @@
         <a-asset-item id="fish2-3D" src="assets/models/TropicalFish08.obj"></a-asset-item>
         <a-asset-item id="fish2-mtl" src="assets/models/TropicalFish08.mtl"></a-asset-item>
 
-        <a-asset-item id="pyramid-3D" src="assets/models/pyramid.obj"></a-asset-item>
+        <a-asset-item id="pyramid-3D" src="assets/models/Figures/Pyramid/pyramid-4.obj"></a-asset-item>
 
         <a-asset-item id="chicken-full" src="assets/models/Step-by-step/Chicken/Chicken-full.obj"></a-asset-item>
         <a-asset-item id="chicken-full-mtl" src="assets/models/Step-by-step/Chicken/Chicken-full.mtl"></a-asset-item>
@@ -106,6 +108,12 @@
                  material= "src: #finished"></a-mixin>
         <a-mixin id="finishedcube-collided"
                  material= "src: #finishedc"></a-mixin>
+
+        <a-mixin id="helpcube"
+                 geometry="primitive: box; height: 0.10; width: 0.30; depth: 0.10"
+                 material= "src: #help"></a-mixin>
+        <a-mixin id="helpcube-collided"
+                 material= "src: #helpc"></a-mixin>
 
 
       </a-assets>
@@ -158,17 +166,21 @@
       <a-sphere color="blue" position="0 2 0" radius="0.05" class="apainter-ui" visible="false"></a-sphere>
 
       <!-- CUBE -->
+      <a-obj-model id=cube3Did class="figure" src="assets/models/Figures/Cube/cube-4.obj" color="blue" position="-1 1 -1" scale="0.2 0.2 0.2" visible="false"></a-obj-model>
       <a-image id="cube2Did" class="figure" src="#cube2D" position="1 1 -1" scale="0.7 0.7 0.7" visible="false" ></a-image>
-      <a-box id="cube3Did" wireframe="true" class="figure" color="blue" position="-1 1 -1" scale="0.5 0.5 0.5" visible="false"></a-box>
+      <!--<a-box id="cube3Did" wireframe="true" class="figure" color="blue" position="-1 1 -1" scale="0.5 0.5 0.5" visible="false"></a-box>-->
 
       <!-- SPHERE -->
-      <a-sphere id="sphere3Did" wireframe="true" class="figure" color="red" position="-1 0.8 -1" scale="0.25 0.25 0.25" visible="false"></a-sphere>
+      <a-obj-model id="sphere" class="figure" src="assets/models/Figures/Sphere/sphere-4.obj" color="red" position="-1 1 -1" scale="0.2 0.2 0.2" visible="false"></a-obj-model>
+      <!--<a-sphere id="sphere3Did" wireframe="true" class="figure" color="red" position="-1 0.8 -1" scale="0.25 0.25 0.25" visible="false"></a-sphere>-->
 
       <!-- CYLINDER -->
-      <a-cylinder id="cylinder3Did" wireframe="true" class="figure" color="yellow" position="-1 0.8 -1" height="1.5" radius="0.5" scale="0.25 0.25 0.25" visible="false"></a-cylinder>
+      <a-obj-model id="cylinder3Did" class="figure" src="assets/models/Figures/Cylinder/cylinder-4.obj" color="yellow" position="-1 1 -1" scale="0.3 0.3 0.3" visible="false"></a-obj-model>
+      <!--<a-cylinder id="cylinder3Did" wireframe="true" class="figure" color="yellow" position="-1 0.8 -1" height="1.5" radius="0.5" scale="0.25 0.25 0.25" visible="false"></a-cylinder>-->
 
       <!-- CONE -->
-      <a-cone id="cone3Did" class="figure" color="#9933ff" position="-1 1 -1" radius-bottom="0.7" radius-top="0" scale="0.4 0.4 0.4" wireframe="true" visible="false"></a-cone>
+      <a-obj-model id="cone3Did" class="figure" src="assets/models/Figures/Cone/cone-4.obj" color="#9933ff" position="-1 1 -1" scale="0.3 0.3 0.3" visible="false"></a-obj-model>
+      <!--<a-cone id="cone3Did" class="figure" color="#9933ff" position="-1 1 -1" radius-bottom="0.7" radius-top="0" scale="0.4 0.4 0.4" wireframe="true" visible="false"></a-cone>-->
 
       <!-- PYRAMID -->
       <a-obj-model id="pyramid3Did" position="-1 0.6 -1" class="figure" src="#pyramid-3D" scale="0.3 0.3 0.3" position="-1 1 -1" visible="false" color="green"></a-obj-model>
@@ -224,6 +236,7 @@
       <a-entity id="nextButton" class="cube" mixin="nextcube" position="0.2 1 -1.5" visible="false"></a-entity>
       <a-entity id="previousButton" class="cube" mixin="previouscube" position="-0.2 1 -1.5" visible="false"></a-entity>
       <a-entity id="finishedButton" class="cube" mixin="finishedcube" position="0 1.2 -1.5" visible="false"></a-entity>
+      <a-entity id="helpButton" class="cube" mixin="helpcube" position="0 1.2 -1.3" visible="false"></a-entity>
 
       <a-obj-model id="tree" class="figure" src="assets/models/Step-by-step/Tree/tree-1.obj" mtl="assets/models/Step-by-step/Tree/tree-1.mtl" position="-1 0.5 -1" scale="0.3 0.3 0.3" rotation="0 0 0" visible="false"></a-obj-model>
       <a-obj-model id="church" class="figure" src="assets/models/Step-by-step/SmallChurch/smallchurch-0.obj" mtl="assets/models/Step-by-step/SmallChurch/smallchurch-0.mtl" position="-1 0.5 -1" scale="0.1 0.1 0.1" rotation="0 90 0" visible="false"></a-obj-model>
@@ -249,12 +262,12 @@
         <div class="form">
         <input id="apainter-share-url" type="text" value="" readonly/>
         <div id="copy-toclipboard" data-clipboard-target="#apainter-share-url" class="button copy">KOPIEER URL</div>
+        <input type="button" value="SLUITEN" onclick="closeUploadUi()" class="close-button"/>
         </div>
       </div>
     </div>
 
     <script src="vendor/ga.js"></script>
-
 
 
     <!-- GitHub corner. -->

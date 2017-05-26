@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9a1e22d-1024-4e14-85d2-6b29cadcc41a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/models/pyramid.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/models/pyramid.obj" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/experiment-menu-2d.js" afterPath="$PROJECT_DIR$/src/experiment-menu-2d.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/select.js" afterPath="$PROJECT_DIR$/src/select.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui2d.js" afterPath="$PROJECT_DIR$/src/ui2d.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
+      <file leaf-file-name="experiment-menu-2d.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/experiment-menu-2d.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+            <state relative-caret-position="508">
+              <caret line="479" column="22" lean-forward="false" selection-start-line="479" selection-start-column="22" selection-end-line="479" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -38,18 +43,8 @@
       <file leaf-file-name="ptp-drawings.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ptp-drawings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="experiment-menu-2d.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/experiment-menu-2d.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="116" column="15" lean-forward="false" selection-start-line="116" selection-start-column="15" selection-end-line="116" selection-end-column="15" />
+            <state relative-caret-position="466">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -58,29 +53,21 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2751">
-              <caret line="131" column="15" lean-forward="false" selection-start-line="131" selection-start-column="15" selection-end-line="131" selection-end-column="15" />
+            <state relative-caret-position="-878">
+              <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
               <folding>
-                <marker date="1495242556000" expanded="true" signature="1578:1677" ph="{...}" />
-                <marker date="1495242556000" expanded="true" signature="2353:2361" ph="{...}" />
-                <marker date="1495242556000" expanded="true" signature="2399:2491" ph="{...}" />
-                <marker date="1495242556000" expanded="true" signature="2544:2640" ph="{...}" />
-                <marker date="1495242556000" expanded="true" signature="2691:2856" ph="{...}" />
-                <marker date="1495242556000" expanded="true" signature="2878:3050" ph="{...}" />
-                <marker date="1495242556000" expanded="true" signature="3214:3322" ph="{...}" />
-                <marker date="1495242556000" expanded="true" signature="3343:3498" ph="{...}" />
-                <marker date="1495242556000" expanded="true" signature="3535:3591" ph="{...}" />
-                <marker date="1495242556000" expanded="true" signature="3634:3660" ph="{...}" />
+                <marker date="1495748623592" expanded="true" signature="1766:1865" ph="{...}" />
+                <marker date="1495748623592" expanded="true" signature="2541:2549" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="aabb-collider.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/aabb-collider.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="184" column="67" lean-forward="false" selection-start-line="184" selection-start-column="67" selection-end-line="184" selection-end-column="67" />
+            <state relative-caret-position="441">
+              <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -96,41 +83,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51387">
-              <caret line="2447" column="12" lean-forward="false" selection-start-line="2447" selection-start-column="6" selection-end-line="2447" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="painter.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/systems/painter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ui.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3360">
-              <caret line="160" column="13" lean-forward="true" selection-start-line="158" selection-start-column="12" selection-end-line="160" selection-end-column="13" />
+            <state relative-caret-position="3024">
+              <caret line="144" column="34" lean-forward="false" selection-start-line="144" selection-start-column="34" selection-end-line="144" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ui2d.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui2d.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="28" column="3" lean-forward="false" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="select.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/select.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="66" column="9" lean-forward="false" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uploadcare.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/uploadcare.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="15" column="260744" lean-forward="false" selection-start-line="15" selection-start-column="260744" selection-end-line="15" selection-end-column="260744" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="168" column="39" lean-forward="true" selection-start-line="168" selection-start-column="39" selection-end-line="168" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -147,9 +144,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>intersectObjects</find>
-      <find>menuels</find>
-      <find>object</find>
       <find>sceneEl</find>
       <find>updateInter</find>
       <find>updateinter</find>
@@ -177,6 +171,9 @@
       <find>style</find>
       <find>display</find>
       <find>painter</find>
+      <find>a-painter-ui</find>
+      <find>apainter-ui</find>
+      <find>upload</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -197,7 +194,6 @@
         <option value="$PROJECT_DIR$/assets/models/TropicalFish08.mtl" />
         <option value="$PROJECT_DIR$/src/components/experiment-menu.js" />
         <option value="$PROJECT_DIR$/vendor/aframe-master.min.js" />
-        <option value="$PROJECT_DIR$/src/ui2d.js" />
         <option value="$PROJECT_DIR$/assets/models/cartoonCottageHouse.mtl" />
         <option value="$PROJECT_DIR$/assets/models/Step-by-step/Chicken/Chicken.mtl" />
         <option value="$PROJECT_DIR$/build.js" />
@@ -205,11 +201,12 @@
         <option value="$PROJECT_DIR$/src/aframe-ui-widgets.min.js" />
         <option value="$PROJECT_DIR$/src/aabb-collider.js" />
         <option value="$PROJECT_DIR$/src/systems/grab.js" />
-        <option value="$PROJECT_DIR$/src/select.js" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/src/components/sbs-drawings.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/ui.js" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/src/ui2d.js" />
+        <option value="$PROJECT_DIR$/src/select.js" />
         <option value="$PROJECT_DIR$/src/experiment-menu-2d.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
@@ -224,9 +221,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1932" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -243,6 +241,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -379,7 +379,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Step-by-step" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -397,18 +401,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="buttons" />
+              <option name="myItemId" value="Figures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sphere" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a-painter-private" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a-painter-private" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Figures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -600,7 +628,16 @@
       <workItem from="1494845673531" duration="707000" />
       <workItem from="1494981792311" duration="756000" />
       <workItem from="1495237975266" duration="7485000" />
-      <workItem from="1495331400411" duration="5316000" />
+      <workItem from="1495331400411" duration="5634000" />
+      <workItem from="1495390360742" duration="2080000" />
+      <workItem from="1495433452711" duration="1023000" />
+      <workItem from="1495435004482" duration="6356000" />
+      <workItem from="1495524004221" duration="1278000" />
+      <workItem from="1495525767993" duration="495000" />
+      <workItem from="1495527277434" duration="3572000" />
+      <workItem from="1495670586796" duration="1163000" />
+      <workItem from="1495746521202" duration="1791000" />
+      <workItem from="1495748327278" duration="13320000" />
     </task>
     <task id="LOCAL-00001" summary="2D en 3D vis toegevoegd">
       <created>1492528309354</created>
@@ -651,11 +688,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495324477554</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Graded assignments toegevoegd">
+      <created>1495337521278</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1495337521278</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189564000" />
+    <option name="totallyTimeSpent" value="220960000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -667,10 +711,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1932" height="1038" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18302387" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18138552" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.13958333" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1470911" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
@@ -679,7 +723,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33975086" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.040770102" sideWeight="0.86041665" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11438279" sideWeight="0.86041665" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -723,7 +767,8 @@
     <MESSAGE value="step by step drawings" />
     <MESSAGE value="fixed buttons" />
     <MESSAGE value="Save button enzo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save button enzo" />
+    <MESSAGE value="Graded assignments toegevoegd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Graded assignments toegevoegd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -954,13 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uploadcare.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="15" column="260744" lean-forward="false" selection-start-line="15" selection-start-column="260744" selection-end-line="15" selection-end-column="260744" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/grab.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1785">
@@ -975,67 +1013,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui2d.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aabb-collider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/select.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="824">
-          <caret line="63" column="5" lean-forward="false" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/sbs-drawings.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/ptp-drawings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2751">
-          <caret line="131" column="15" lean-forward="false" selection-start-line="131" selection-start-column="15" selection-end-line="131" selection-end-column="15" />
-          <folding>
-            <marker date="1495242556000" expanded="true" signature="1578:1677" ph="{...}" />
-            <marker date="1495242556000" expanded="true" signature="2353:2361" ph="{...}" />
-            <marker date="1495242556000" expanded="true" signature="2399:2491" ph="{...}" />
-            <marker date="1495242556000" expanded="true" signature="2544:2640" ph="{...}" />
-            <marker date="1495242556000" expanded="true" signature="2691:2856" ph="{...}" />
-            <marker date="1495242556000" expanded="true" signature="2878:3050" ph="{...}" />
-            <marker date="1495242556000" expanded="true" signature="3214:3322" ph="{...}" />
-            <marker date="1495242556000" expanded="true" signature="3343:3498" ph="{...}" />
-            <marker date="1495242556000" expanded="true" signature="3535:3591" ph="{...}" />
-            <marker date="1495242556000" expanded="true" signature="3634:3660" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1043,7 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,6 +1032,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51387">
           <caret line="2447" column="12" lean-forward="false" selection-start-line="2447" selection-start-column="6" selection-end-line="2447" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/systems/painter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3528">
+          <caret line="168" column="49" lean-forward="false" selection-start-line="168" selection-start-column="27" selection-end-line="168" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aabb-collider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1063,34 +1060,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/systems/painter.js">
+    <entry file="file://$PROJECT_DIR$/src/components/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="3" />
+        <state relative-caret-position="3024">
+          <caret line="144" column="34" lean-forward="false" selection-start-line="144" selection-start-column="34" selection-end-line="144" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui.js">
+    <entry file="file://$PROJECT_DIR$/src/uploadcare.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3360">
-          <caret line="160" column="13" lean-forward="true" selection-start-line="158" selection-start-column="12" selection-end-line="160" selection-end-column="13" />
+        <state relative-caret-position="231">
+          <caret line="15" column="260744" lean-forward="false" selection-start-line="15" selection-start-column="260744" selection-end-line="15" selection-end-column="260744" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-878">
+          <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          <folding>
+            <marker date="1495748623592" expanded="true" signature="1766:1865" ph="{...}" />
+            <marker date="1495748623592" expanded="true" signature="2541:2549" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ptp-drawings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui2d.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="3" lean-forward="false" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="66" column="9" lean-forward="false" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/experiment-menu-2d.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="116" column="15" lean-forward="false" selection-start-line="116" selection-start-column="15" selection-end-line="116" selection-end-column="15" />
+        <state relative-caret-position="508">
+          <caret line="479" column="22" lean-forward="false" selection-start-line="479" selection-start-column="22" selection-end-line="479" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="184" column="67" lean-forward="false" selection-start-line="184" selection-start-column="67" selection-end-line="184" selection-end-column="67" />
+        <state relative-caret-position="107">
+          <caret line="168" column="39" lean-forward="true" selection-start-line="168" selection-start-column="39" selection-end-line="168" selection-end-column="39" />
           <folding />
         </state>
       </provider>

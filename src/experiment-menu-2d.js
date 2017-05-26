@@ -10,6 +10,11 @@ function toggleMenuVisibility() {
     }
 }
 
+function closeUploadUi() {
+    var apainterUI = document.getElementById('apainter-ui');
+    apainterUI.style.display = 'none';
+}
+
 function openFigure(f) {
     var slider = document.getElementById("slider");
     removeAllFiguresFromScene();
@@ -22,6 +27,7 @@ function openFigure(f) {
             }
             else {
                 document.querySelector("#cube3Did").setAttribute('visible', 'true');
+                basicFigureBeforeHelp(4);
             }
             break;
 
@@ -30,6 +36,7 @@ function openFigure(f) {
             }
             else {
                 document.querySelector("#pyramid3Did").setAttribute('visible', 'true');
+                basicFigureBeforeHelp(5);
             }
             break;
 
@@ -37,7 +44,8 @@ function openFigure(f) {
             if(slider.checked) {
             }
             else {
-                document.querySelector("#sphere3Did").setAttribute('visible', 'true');
+                document.querySelector("#sphere").setAttribute('visible', 'true');
+                basicFigureBeforeHelp(6);
             }
             break;
 
@@ -46,6 +54,7 @@ function openFigure(f) {
             }
             else {
                 document.querySelector("#cylinder3Did").setAttribute('visible', 'true');
+                basicFigureBeforeHelp(7);
             }
             break;
 
@@ -102,6 +111,7 @@ function openFigure(f) {
             }
             else {
                 document.querySelector("#cone3Did").setAttribute('visible', 'true');
+                basicFigureBeforeHelp(8);
             }
             break;
 
@@ -164,9 +174,36 @@ function startsbsdrawing(num) {
         case 3:
             sbsChicken(this.step);
             break;
+        case 4:
+            sbsCube(this.step);
+            break;
+        case 5:
+            sbsPyramid(this.step);
+            break;
+        case 6:
+            sbsSphere(this.step);
+            break;
+        case 7:
+            sbsCylinder(this.step);
+            break;
+        case 8:
+            sbsCone(this.step);
+            break;
         default:
             break;
     }
+}
+
+function basicFigureBeforeHelp(num) {
+    var helpButton =  document.querySelector("#helpButton");
+    helpButton.setAttribute('visible', 'true');
+    this.drawing = num;
+}
+
+function startHelp() {
+    var helpButton =  document.querySelector("#helpButton");
+    helpButton.setAttribute('visible', 'false');
+    startsbsdrawing(this.drawing);
 }
 
 function sbsNextStep() {
@@ -179,6 +216,21 @@ function sbsNextStep() {
             break;
         case 3:
             sbsChicken(this.step + 1);
+            break;
+        case 4:
+            sbsCube(this.step + 1);
+            break;
+        case 5:
+            sbsPyramid(this.step + 1);
+            break;
+        case 6:
+            sbsSphere(this.step + 1);
+            break;
+        case 7:
+            sbsCylinder(this.step + 1);
+            break;
+        case 8:
+            sbsCone(this.step + 1);
             break;
         default:
             break;
@@ -196,6 +248,21 @@ function sbsPreviousStep() {
                 break;
             case 3:
                 sbsChicken(this.step - 1);
+                break;
+            case 4:
+                sbsCube(this.step - 1);
+                break;
+            case 5:
+                sbsPyramid(this.step - 1);
+                break;
+            case 6:
+                sbsSphere(this.step - 1);
+                break;
+            case 7:
+                sbsCylinder(this.step - 1);
+                break;
+            case 8:
+                sbsCone(this.step - 1);
                 break;
             default:
                 break;
@@ -303,6 +370,114 @@ function sbsChicken(step) {
         chickenEl.setAttribute('mtl', '#chicken-full-mtl');
     }
     else if(step === 6) {
+        lastStep();
+    }
+}
+
+function sbsCube(step) {
+    this.step = step;
+    var cubeEl = document.querySelector("#cube3Did");
+
+    if(step === 1) {
+        cubeEl.setAttribute('src', 'assets/models/Figures/Cube/cube-1.obj');
+        cubeEl.setAttribute('visible', 'true');
+    }
+    else if(step === 2) {
+        cubeEl.setAttribute('src', 'assets/models/Figures/Cube/cube-2.obj');
+    }
+    else if(step === 3) {
+        cubeEl.setAttribute('src', 'assets/models/Figures/Cube/cube-3.obj');
+    }
+    else if(step === 4) {
+        cubeEl.setAttribute('src', 'assets/models/Figures/Cube/cube-4.obj');
+    }
+    else if(step === 5) {
+        lastStep();
+    }
+}
+
+function sbsPyramid(step) {
+    this.step = step;
+    var pyramidEl = document.querySelector("#pyramid3Did");
+
+    if(step === 1) {
+        pyramidEl.setAttribute('src', 'assets/models/Figures/Pyramid/pyramid-1.obj');
+        pyramidEl.setAttribute('visible', 'true');
+    }
+    else if(step === 2) {
+        pyramidEl.setAttribute('src', 'assets/models/Figures/Pyramid/pyramid-2.obj');
+    }
+    else if(step === 3) {
+        pyramidEl.setAttribute('src', 'assets/models/Figures/Pyramid/pyramid-3.obj');
+    }
+    else if(step === 4) {
+        pyramidEl.setAttribute('src', 'assets/models/Figures/Pyramid/pyramid-4.obj');
+    }
+    else if(step === 5) {
+        lastStep();
+    }
+}
+
+function sbsSphere(step) {
+    this.step = step;
+    var sphereEl = document.querySelector("#sphere");
+
+    if(step === 1) {
+        sphereEl.setAttribute('src', 'assets/models/Figures/Sphere/sphere-1.obj');
+        sphereEl.setAttribute('visible', 'true');
+    }
+    else if(step === 2) {
+        sphereEl.setAttribute('src', 'assets/models/Figures/Sphere/sphere-2.obj');
+    }
+    else if(step === 3) {
+        sphereEl.setAttribute('src', 'assets/models/Figures/Sphere/sphere-3.obj');
+    }
+    else if(step === 4) {
+        sphereEl.setAttribute('src', 'assets/models/Figures/Sphere/sphere-4.obj');
+    }
+    else if(step === 5) {
+        lastStep();
+    }
+}
+
+function sbsCylinder(step) {
+    this.step = step;
+    var cylinderEl = document.querySelector("#cylinder3Did");
+
+    if(step === 1) {
+        cylinderEl.setAttribute('src', 'assets/models/Figures/Cylinder/cylinder-1.obj');
+        cylinderEl.setAttribute('visible', 'true');
+    }
+    else if(step === 2) {
+        cylinderEl.setAttribute('src', 'assets/models/Figures/Cylinder/cylinder-2.obj');
+    }
+    else if(step === 3) {
+        cylinderEl.setAttribute('src', 'assets/models/Figures/Cylinder/cylinder-3.obj');
+    }
+    else if(step === 4) {
+        cylinderEl.setAttribute('src', 'assets/models/Figures/Cylinder/cylinder-4.obj');
+    }
+    else if(step === 5) {
+        lastStep();
+    }
+
+}
+
+function sbsCone(step) {
+    this.step = step;
+    var coneEl = document.querySelector("#cone3Did");
+
+    if(step === 1) {
+        coneEl.setAttribute('src', 'assets/models/Figures/Cone/cone-2.obj');
+        coneEl.setAttribute('visible', 'true');
+    }
+    else if(step === 2) {
+        coneEl.setAttribute('src', 'assets/models/Figures/Cone/cone-3.obj');
+    }
+    else if(step === 3) {
+        coneEl.setAttribute('src', 'assets/models/Figures/Cone/cone-4.obj');
+    }
+    else if(step === 4) {
         lastStep();
     }
 }

@@ -59,6 +59,11 @@ AFRAME.registerComponent('select', {
                 pressedFinished();
                 this.done = true;
             }
+            else if(hitEl.id === "helpButton") {
+                console.log("Help button hit");
+                startHelp();
+                this.done=true;
+            }
         }
 
     }
