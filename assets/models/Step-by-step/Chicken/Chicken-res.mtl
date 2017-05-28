@@ -1,0 +1,44 @@
+# Blender MTL File: 'None'
+# Material Count: 4
+
+newmtl 08___Default.012
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.483054 0.002237 0.002950
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Chicken_texture.jpg
+map_Bump Map__5_Normal_Bump.tga
+map_Ka Chicken_texture.jpg
+
+newmtl 08___Default.013
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.831579 0.557176 0.538161
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Chicken_texture.jpg
+map_Bump Map__5_Normal_Bump.tga
+map_Ka Chicken_texture.jpg
+
+newmtl Material.031
+Ns 76.470588
+Ka 0.000000 0.000000 0.000000
+Kd 0.714311 0.432150 0.274036
+Ks 0.209091 0.209091 0.209091
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Material.032
+Ns 76.470588
+Ka 0.000000 0.000000 0.000000
+Kd 0.558553 0.415828 0.039118
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2

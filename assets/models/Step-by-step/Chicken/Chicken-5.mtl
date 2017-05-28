@@ -1,5 +1,17 @@
 # Blender MTL File: 'None'
-# Material Count: 2
+# Material Count: 3
+
+newmtl 08___Default.013
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.831579 0.557176 0.538161
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Chicken_texture.jpg
+map_Bump Map__5_Normal_Bump.tga
+map_Ka Chicken_texture.jpg
 
 newmtl Material.031
 Ns 76.470588
