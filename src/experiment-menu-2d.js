@@ -129,6 +129,24 @@ function openFigure(f) {
             document.querySelector("#knut3Did").setAttribute('visible', 'true');
             break;
 
+        case 15:
+            if(slider.checked) {
+                document.querySelector("#plane2Did").setAttribute('visible', 'true');
+            }
+            else {
+                document.querySelector("#plane3Did").setAttribute('visible', 'true');
+            }
+            break;
+
+        case 16:
+            if(slider.checked) {
+                document.querySelector("#lighthouse2Did").setAttribute('visible', 'true');
+            }
+            else {
+                document.querySelector("#lighthouse3Did").setAttribute('visible', 'true');
+            }
+            break;
+
         default:
             break;
     }

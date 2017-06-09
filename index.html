@@ -54,21 +54,9 @@
 
         <!-- MODELS -->
 
-        <!-- OLD
-        <img id="spongebob2D" src="assets/images/spongebob2D.png" >
-        <a-asset-item id="spongebob3D" src="assets/models/Spongebob.obj"></a-asset-item>
-
-        <img id="dragonfly2D" src="assets/images/dragonfly2D.png">
-        <a-asset-item id="dragonfly3D" src="assets/models/Dragonfly.obj"></a-asset-item>
-        -->
-
         <img id="house2D" src="assets/images/house2D.png">
         <a-asset-item id="house3D" src="assets/models/House.obj"></a-asset-item>
         <a-asset-item id="house-mtl" src="assets/models/House.mtl"></a-asset-item>
-
-        <img id="fish2D" src="assets/images/fish2D.png">
-        <a-asset-item id="fish3D" src="assets/models/wraisse_main.obj"></a-asset-item>
-        <a-asset-item id="fish-mtl" src="assets/models/wraisse_main.mtl"></a-asset-item>
 
         <img id="bug2D" src="assets/images/bug2D.png">
         <a-asset-item id="bug3D" src="assets/models/Bug.obj"></a-asset-item>
@@ -78,9 +66,9 @@
         <a-asset-item id="knut3D" src="assets/models/Knut.obj"></a-asset-item>
         <a-asset-item id="knut-mtl" src="assets/models/Knut.mtl"></a-asset-item>
 
-        <img id="fish2-2D" src="assets/images/fish2-2D.png">
-        <a-asset-item id="fish2-3D" src="assets/models/TropicalFish08.obj"></a-asset-item>
-        <a-asset-item id="fish2-mtl" src="assets/models/TropicalFish08.mtl"></a-asset-item>
+        <img id="fish-2D" src="assets/images/fish-2D.png">
+        <a-asset-item id="fish-3D" src="assets/models/TropicalFish08.obj"></a-asset-item>
+        <a-asset-item id="fish-mtl" src="assets/models/TropicalFish08.mtl"></a-asset-item>
 
         <a-asset-item id="pyramid-3D" src="assets/models/Figures/Pyramid/pyramid-4.obj"></a-asset-item>
 
@@ -88,8 +76,16 @@
         <a-asset-item id="chicken-full-mtl" src="assets/models/Step-by-step/Chicken/Chicken-full.mtl"></a-asset-item>
 
         <img id="gardenHouse2D" src="assets/images/gardenHouse2D.png">
-        <a-asset-item id="gardenHouse3D" src="assets/models/LittleHouse.obj"></a-asset-item>
-        <a-asset-item id="gardenHouse-mtl" src="assets/models/LittleHouse.mtl"></a-asset-item>
+        <a-asset-item id="gardenHouse3D" src="assets/models/GardenHouse.obj"></a-asset-item>
+        <a-asset-item id="gardenHouse-mtl" src="assets/models/GardenHouse.mtl"></a-asset-item>
+
+        <img id="plane2D" src="assets/images/plane2D.png">
+        <a-asset-item id="plane3D" src="assets/models/Plane.obj"></a-asset-item>
+        <a-asset-item id="plane-mtl" src="assets/models/Plane.mtl"></a-asset-item>
+
+        <img id="lighthouse2D" src="assets/images/lighthouse2D.png">
+        <a-asset-item id="lighthouse3D" src="assets/models/Lighthouse.obj"></a-asset-item>
+        <a-asset-item id="lighthouse-mtl" src="assets/models/Lighthouse.mtl"></a-asset-item>
 
         <a-mixin id="nextcube"
                  geometry="primitive: box; height: 0.10; width: 0.30; depth: 0.10"
@@ -189,15 +185,15 @@
       <a-image id="house2Did" src="#house2D" class="figure" position="1 1 -1" scale="1.2 1.2 1.2" visible="false"></a-image>
       <a-obj-model id="house3Did" src="#house3D" class="figure" mtl="#house-mtl" scale="0.0035 0.0035 0.0035" position="-1 0.6 -1" rotation="0 180 0" visible="false"></a-obj-model>
 
-      <!-- FISH 2 -->
-      <a-image id="fish2Did" src="#fish2-2D" class="figure" position="1 1 -1" scale="1 1 1" visible="false"></a-image>
-      <a-obj-model id="fish3Did" src="#fish2-3D" class="figure" mtl="#fish2-mtl" scale="0.003 0.003 0.003" position="-1 1 -1" rotation="0 0 0" visible="false"></a-obj-model>
+      <!-- FISH -->
+      <a-image id="fishDid" src="#fish-2D" class="figure" position="1 1 -1" scale="1 1 1" visible="false"></a-image>
+      <a-obj-model id="fish3Did" src="#fish-3D" class="figure" mtl="#fish-mtl" scale="0.003 0.003 0.003" position="-1 1 -1" rotation="0 0 0" visible="false"></a-obj-model>
 
-      <!-- BUG -->
+      <!-- FIREFLY -->
       <a-image id="bug2Did" src="#bug2D" class="figure" position="-1 1.1 -1" scale="1.2 1.2 1.2" visible="false"></a-image>
       <a-obj-model id="bug3Did" src="#bug3D" class="figure" mtl="#bug-mtl" scale="0.15 0.15 0.15" position="-1 0.5 -1" rotation="180 30 180" visible="false"></a-obj-model>
 
-      <!-- KNUT -->
+      <!-- POLAR BEAR (KNUT) -->
       <a-image id="knut2Did" src="#knut2D" class="figure" position="1 0.8 -1" scale="1 1 1" visible="false"></a-image>
       <a-obj-model id="knut3Did" src="#knut3D" class="figure" mtl="#knut-mtl" scale="0.005 0.005 0.005" position="-1 0.5 -1" rotation="0 50 0" visible="false"></a-obj-model>
 
@@ -205,28 +201,20 @@
       <a-image id="gardenHouse2Did" src="#gardenHouse2D" class="figure" position="-1 1 -1" scale="1.4 1.4 1.4" visible="false"></a-image>
       <a-obj-model id="gardenHouse3Did" src="#gardenHouse3D" class="figure" mtl="#gardenHouse-mtl" scale="0.3 0.3 0.3" position="-1 0.6 -1" rotation="0 180 0" visible="false"></a-obj-model>
 
-      <!-- OLD
+      <!-- PLANE -->
+      <a-image id="plane2Did" src="#plane2D" class="figure" position="-1 1 -1" scale="1.4 1.4 1.4" visible="false"></a-image>
+      <a-obj-model id="plane3Did" src="#plane3D" class="figure" mtl="#plane-mtl" scale="0.25 0.25 0.25" position="-1 0.6 -1" rotation="0 0 0" visible="false"></a-obj-model>
 
-      FISH
-      <a-image src="#fish2D" position="1 0.8 -1" scale="1 1 1" visible="false"></a-image>
-      <a-obj-model src="#fish3D" mtl="#fish-mtl" scale="0.2 0.2 0.2" position="-1 0.5 -1" rotation="0 -110 0" visible="false"></a-obj-model>
-
-      DRAGONFLY
-      <a-image src="#dragonfly2D" position="1 1.1 -1" scale="1.5 1.5 1.5" visible="false"></a-image>
-      <a-obj-model src="#dragonfly3D" mtl="assets/models/dragonfly.mtl" scale="1 1 1" position="-1 0.9 -1" visible="false"></a-obj-model>
-
-      SPONGEBOB
-      <a-image src="#spongebob2D" position="1 0.8 -1" scale="1.3 1.3 1.3" visible="false"></a-image>
-      <a-obj-model src="#spongebob3D" mtl="assets/models/spongebob.mtl" scale="0.015 0.015 0.015" position="-1 0.1 -1" rotation="0 -90 0" visible="false"></a-obj-model>
-
-      -->
-
-     <!-- <a-obj-model src="assets/models/Step-by-step/SmallChurch/smallchurch-0.obj" mtl="assets/models/Step-by-step/SmallChurch/smallchurch-0.mtl" position="-1 0.5 -1" scale="0.1 0.1 0.1" rotation="0 90 0" ></a-obj-model>
+      <!-- LIGHTHOUSE -->
+      <a-image id="lighthouse2Did" src="#lighthouse2D" class="figure" position="-1 1 -1" scale="1.4 1.4 1.4" visible="false"></a-image>
+      <a-obj-model id="lighthouse3Did" src="#lighthouse3D" class="figure" mtl="#lighthouse-mtl" scale="0.3 0.3 0.3" position="-1 0.6 -1" rotation="0 0 0" visible="false"></a-obj-model>
 
 
-      <a-obj-model src="assets/models/cartoonCottageHouse.obj" mtl="assets/models/cartoonCottageHouse.mtl" position="-1 0.5 -1" scale="0.1 0.1 0.1" rotation="0 0 0" ></a-obj-model>
+      <!-- <a-obj-model src="assets/models/Step-by-step/SmallChurch/smallchurch-0.obj" mtl="assets/models/Step-by-step/SmallChurch/smallchurch-0.mtl" position="-1 0.5 -1" scale="0.1 0.1 0.1" rotation="0 90 0" ></a-obj-model>
 
-      <a-image name="nextB" id="nextButtonID" src="assets/images/buttons/next.png" position="0 0.5 -1.5" scale="0.5 0.5 0.5" class="apainter-ui"></a-image>
+ -->
+
+ <!--     <a-image name="nextB" id="nextButtonID" src="assets/images/buttons/next.png" position="0 0.5 -1.5" scale="0.5 0.5 0.5" class="apainter-ui"></a-image>
 -->
 
     <!--
@@ -243,7 +231,6 @@
       <a-obj-model id="chicken" class="figure" src="assets/models/Step-by-step/Chicken/Chicken-1.obj" mtl="assets/models/Step-by-step/Chicken/Chicken-1.mtl" position="-1 0.5 -1" scale="0.15 0.15 0.15" rotation="0 90 0" visible="false"></a-obj-model>
 
     </a-scene>
-
 
     <a href="https://aframe.io/a-painter/"><div id="apainter-logo" class="hidden"></div><div id="apainter-author" style="display:none" class="hidden">authorname</div></a>
     <div id="apainter-ui">
@@ -283,8 +270,8 @@
       </label>
 
       <div class="menu-button" id="toggleMenuButton" onclick="toggleMenuVisibility()">MENU</div>
-      <div class="menu-button" onclick="sbsNextStep()">NEXT STEP</div>
-      <div class="menu-button" onclick="startHelp()">HELP</div>
+     <!-- <div class="menu-button" onclick="sbsNextStep()">NEXT STEP</div>
+      <div class="menu-button" onclick="startHelp()">HELP</div>-->
       <br>
       <br>
 
@@ -313,6 +300,8 @@
       <input type="image" src="assets/images/buttons/house.png" name="house" class="menu figure-button" id="house-button" onclick="openFigure(5)"/>
       <input type="image" src="assets/images/buttons/fish.png" name="fish" class="menu figure-button" id="fish-button" onclick="openFigure(6)"/>
       <input type="image" src="assets/images/buttons/polarbear.png" name="polarbear" class="menu figure-button" id="polarbear-button" onclick="openFigure(8)"/>
+      <input type="image" src="assets/images/buttons/plane.png" name="plane" class="menu figure-button" id="plane-button" onclick="openFigure(15)"/>
+      <input type="image" src="assets/images/buttons/lighthouse.png" name="lighthouse" class="menu figure-button" id="lighthouse-button" onclick="openFigure(16)"/>
 
       <div class="menu text">
         <p>Graded assignments</p>
