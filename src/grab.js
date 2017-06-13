@@ -1,5 +1,7 @@
 /* global AFRAME */
 
+// Code from: https://github.com/aframevr/aframe/tree/v0.5.0/examples/showcase/tracked-controls/components
+
 /**
  * Handles events coming from the hand-controls.
  * Determines if the entity is grabbed or released.

@@ -1,5 +1,7 @@
 /* global AFRAME, THREE */
 
+// Code from: https://github.com/aframevr/aframe/tree/v0.5.0/examples/showcase/tracked-controls/components
+
 /**
  * Implement AABB collision detection for entities with a mesh.
  * (https://en.wikipedia.org/wiki/Minimum_bounding_box#Axis-aligned_minimum_bounding_box)

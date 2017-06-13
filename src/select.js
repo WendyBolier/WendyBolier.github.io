@@ -1,5 +1,7 @@
 /* global AFRAME */
 
+// Adapted code from: https://github.com/aframevr/aframe/tree/v0.5.0/examples/showcase/tracked-controls/components
+
 /**
  * Handles events coming from the hand-controls.
  */
@@ -40,6 +42,7 @@ AFRAME.registerComponent('select', {
 
     },
 
+    // Calls the right function when a button is pressed.
     onHit: function (evt) {
         var hitEl = evt.detail.el;
         this.hitEl = hitEl;

@@ -1,7 +1,8 @@
 /**
- * Created by Spacelab on 9-5-2017.
+ * Created by Wendy on 9-5-2017.
  */
 
+// Toggle visibility of the experiment menu
 function toggleMenuVisibility() {
     var elems = document.getElementsByClassName('menu');
     for (var i = 0; i < elems.length; ++i) {
@@ -10,11 +11,13 @@ function toggleMenuVisibility() {
     }
 }
 
+// Close the UI that opens when saving a drawing
 function closeUploadUi() {
     var apainterUI = document.getElementById('apainter-ui');
     apainterUI.style.display = 'none';
 }
 
+// Set the corresponding 2D or 3D example(s) to visible
 function openFigure(f) {
     var slider = document.getElementById("slider");
     removeAllFiguresFromScene();
@@ -78,10 +81,10 @@ function openFigure(f) {
 
         case 7:
             if(slider.checked) {
-                document.querySelector("#bug2Did").setAttribute('visible', 'true');
+                document.querySelector("#firefly2Did").setAttribute('visible', 'true');
             }
             else {
-                document.querySelector("#bug3Did").setAttribute('visible', 'true');
+                document.querySelector("#firefly3Did").setAttribute('visible', 'true');
             }
             break;
 
@@ -152,6 +155,7 @@ function openFigure(f) {
     }
 }
 
+// Clear scene
 function removeAllFiguresFromScene() {
     var figures = document.querySelectorAll(".figure");
     for (var i = 0; i < figures.length; ++i) {
@@ -159,6 +163,7 @@ function removeAllFiguresFromScene() {
     }
 }
 
+// Reset everything related to the step-by-step exercises
 function resetSbs() {
     var next =  document.querySelector("#nextButton");
     var previous =  document.querySelector("#previousButton");
@@ -198,6 +203,7 @@ function resetSbs() {
     coneEl.setAttribute('src', 'assets/models/Figures/Cone/cone-4.obj');
 }
 
+// Start the corresponding step-by-step drawing exercise
 function startsbsdrawing(num) {
     var next =  document.querySelector("#nextButton");
     var previous =  document.querySelector("#previousButton");
@@ -240,18 +246,21 @@ function startsbsdrawing(num) {
     }
 }
 
+// Show the help button when starting one of the basic shape exercises
 function basicFigureBeforeHelp(num) {
     var helpButton =  document.querySelector("#helpButton");
     helpButton.setAttribute('visible', 'true');
     this.drawing = num;
 }
 
+// Called when the help button has been pressed; makes the help button invisible and starts the steps.
 function startHelp() {
     var helpButton =  document.querySelector("#helpButton");
     helpButton.setAttribute('visible', 'false');
     startsbsdrawing(this.drawing);
 }
 
+// Go to the next step of the sbs exercise
 function sbsNextStep() {
     switch(this.drawing) {
         case 1:
@@ -283,6 +292,7 @@ function sbsNextStep() {
     }
 }
 
+// Go to the previous step of the sbs exercise
 function sbsPreviousStep() {
     if(this.step > 1) {
         switch (this.drawing) {
@@ -316,6 +326,7 @@ function sbsPreviousStep() {
     }
 }
 
+// Loading the models and materials for the steps of the SBS tree
 function sbsTree(step) {
     this.step = step;
     var treeEl = document.querySelector("#tree");
@@ -342,22 +353,14 @@ function sbsTree(step) {
     }
 }
 
+// Loading the models and materials for the steps of the SBS church
 function sbsSmallChurch(step) {
     this.step = step;
-    //var sceneEl = document.querySelector('a-scene');
     var churchEl = document.querySelector("#church");
 
     if(step === 1) {
-        //var sceneEl = document.querySelector('a-scene');
-        //var churchEl = document.createElement('a-obj-model');
-        //sceneEl.appendChild(churchEl);
-        //churchEl.setAttribute('position', '-1 0.5 -1');
-        //churchEl.setAttribute('scale', '0.1 0.1 0.1');
-       // churchEl.setAttribute('rotation', '0 90 0');
         churchEl.setAttribute('src', 'assets/models/Step-by-step/SmallChurch/smallchurch-0.obj');
         churchEl.setAttribute('mtl', 'assets/models/Step-by-step/SmallChurch/smallchurch-0.mtl');
-       // churchEl.setAttribute('class', 'figure');
-        //this.churchEl = churchEl;
         churchEl.setAttribute('visible', 'true');
     }
     else if(step === 2) {
@@ -390,6 +393,7 @@ function sbsSmallChurch(step) {
     }
 }
 
+// Loading the models and materials for the steps of the SBS chicken
 function sbsChicken(step) {
     this.step = step;
     var chickenEl = document.querySelector("#chicken");
@@ -432,6 +436,7 @@ function sbsChicken(step) {
     }
 }
 
+// Loading the models for the steps of the cube
 function sbsCube(step) {
     this.step = step;
     var cubeEl = document.querySelector("#cube3Did");
@@ -454,6 +459,7 @@ function sbsCube(step) {
     }
 }
 
+// Loading the models for the steps of the pyramid
 function sbsPyramid(step) {
     this.step = step;
     var pyramidEl = document.querySelector("#pyramid3Did");
@@ -476,6 +482,7 @@ function sbsPyramid(step) {
     }
 }
 
+// Loading the models for the steps of the sphere
 function sbsSphere(step) {
     this.step = step;
     var sphereEl = document.querySelector("#sphere");
@@ -498,6 +505,7 @@ function sbsSphere(step) {
     }
 }
 
+// Loading the models for the steps of the cylinder
 function sbsCylinder(step) {
     this.step = step;
     var cylinderEl = document.querySelector("#cylinder3Did");
@@ -518,9 +526,9 @@ function sbsCylinder(step) {
     else if(step === 5) {
         lastStep();
     }
-
 }
 
+// Loading the models for the steps of the cone
 function sbsCone(step) {
     this.step = step;
     var coneEl = document.querySelector("#cone3Did");
@@ -540,8 +548,8 @@ function sbsCone(step) {
     }
 }
 
+// Called when a SBS exercise reaches the last step; makes the step buttons invisible and shows a finished button.
 function lastStep() {
-
     var next =  document.querySelector("#nextButton");
     var previous =  document.querySelector("#previousButton");
     var finished =  document.querySelector("#finishedButton");
@@ -551,16 +559,19 @@ function lastStep() {
     finished.setAttribute('visible', 'true');
 }
 
+// When the finished button is pressed; reset everything.
 function pressedFinished() {
     removeAllFiguresFromScene();
     startsbsdrawing(this.drawing);
 }
 
+// Save and upload drawing
 function directToUpload() {
     var sceneEl = document.querySelector('a-scene');
     sceneEl.systems.painter.upload();
 }
 
+// Clear scene
 function directToClear() {
     var sceneEl = document.querySelector('a-scene');
     if (window.confirm("Weet je zeker dat je alles wilt verwijderen?") == true) {
